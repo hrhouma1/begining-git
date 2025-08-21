@@ -26,7 +26,7 @@ git status    # Should show "On branch main, no commits yet"
 
 **Résultat :** Dossier `.git/` créé = ton projet est maintenant sous Git !
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="first-commit"></a>
 ## 2. Premier Commit
@@ -52,7 +52,7 @@ git log --oneline
 
 **Résultat :** Ton premier commit est dans l'historique !
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="modifications"></a>
 ## 3. Modifications & Status
@@ -81,7 +81,7 @@ git add utils.py && git commit -m "Add utils module"
 git log --oneline             # 3 commits maintenant
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="remote"></a>
 ## 4. Remote & Push
@@ -108,7 +108,7 @@ git push -u origin main       # Push + setup tracking
 git push                      # Suffit maintenant
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="verification"></a>
 ## 5. Vérification
@@ -137,8 +137,8 @@ git push                      # Suffit maintenant
 
 3. **Vérifier sur GitHub :** Ton changement est-il visible ?
 
-### **🎯 Si tout fonctionne → tu maîtrises le workflow Git de base !**
+### **Si tout fonctionne → tu maîtrises le workflow Git de base !**
 
 **Prochaine étape :** Apprendre les branches pour collaborer en équipe.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

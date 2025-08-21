@@ -22,7 +22,7 @@
 1. **MERGE** : Fusionner les branches  
 2. **REBASE** : Réécrire l'historique
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="merge"></a>
 ## 2. Solution 1: Merge
@@ -67,7 +67,7 @@ git merge feature-login
 
 **Historique :** Montre clairement qu'il y a eu 2 lignes de développement parallèles.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="rebase"></a>
 ## 3. Solution 2: Rebase
@@ -110,7 +110,7 @@ git merge feature-login      # Fast-forward merge
 
 **Historique :** Linéaire, comme si tu avais développé après les updates de main.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="comparaison"></a>
 ## 4. Comparaison Pratique
@@ -137,12 +137,12 @@ git merge feature-login      # Fast-forward merge
 A---B---C---D'---E'---F' main (commits D,E,F "déplacés")
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="choix"></a>
 ## 5. Quelle Approche Choisir ?
 
-### **👍 Utilise MERGE quand :**
+### **Utilise MERGE quand :**
 - Tu débutes avec Git
 - Tu veux garder l'historique "vrai"
 - Équipe travaille sur branches longue durée
@@ -154,7 +154,7 @@ git checkout main
 git merge feature-branch
 ```
 
-### **👍 Utilise REBASE quand :**
+### **Utilise REBASE quand :**
 - Tu veux historique propre et linéaire
 - Feature branch courte et personnelle  
 - Équipe préfère historique "story-like"
@@ -168,7 +168,7 @@ git checkout main
 git merge feature-branch    # Fast-forward
 ```
 
-### **⚠️ RÈGLE D'OR :**
+### **RÈGLE D'OR :**
 **JAMAIS rebase des commits déjà partagés/pushés !**
 
 ### **Recommandation simple :**
@@ -177,4 +177,4 @@ git merge feature-branch    # Fast-forward
 
 **Les deux fonctionnent. L'important = cohérence dans l'équipe !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

@@ -29,7 +29,7 @@ APRÈS squash:
 - "Add complete login feature"
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pourquoi"></a>
 ## 2. Pourquoi Squash ?
@@ -55,7 +55,7 @@ xyz999 Implement user authentication system
 - Commits logiques par fonctionnalité
 - Plus facile de revert une feature complète
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="interactif"></a>
 ## 3. Squash Interactif
@@ -83,7 +83,7 @@ squash jkl012 fix indent
 
 **Résultat :** 4 commits → 1 commit propre !
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pratique"></a>
 ## 4. Pratique Immédiate
@@ -112,7 +112,7 @@ git rebase -i HEAD~4
    git log --oneline
    ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="cas-usage"></a>
 ## 5. Cas d'Usage
@@ -143,4 +143,4 @@ git rebase -i HEAD~4
 
 **Squash = Ton aspirateur pour nettoyer l'historique !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
