@@ -19,7 +19,7 @@
 - Sur `main` : tu veux JUSTE cette correction, pas toute la branche
 - Solution : `git cherry-pick <commit-hash>`
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pratique"></a>
 ## 2. Pratique Rapide
@@ -48,7 +48,7 @@ git cherry-pick <hash-du-commit-bugfix>
 
 **Voilà ! Le fix est sur main, sans la fonctionnalité.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="scenario"></a>
 ## 3. Scénario d'Utilisation
@@ -66,7 +66,7 @@ git checkout main
 git cherry-pick abc123f             # Appliquer JUSTE ce commit
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 4. Commandes Essentielles
@@ -80,4 +80,4 @@ git cherry-pick abc123f             # Appliquer JUSTE ce commit
 
 **C'est tout ! Cherry-pick est simple : 1 commit → 1 copie.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

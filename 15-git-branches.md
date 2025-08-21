@@ -26,7 +26,7 @@
 
 **Chacun dans son coin, merge quand c'est prêt !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="action"></a>
 ## 2. Branches en Action
@@ -58,7 +58,7 @@ git merge feature-login
 
 **Résultat : Les 2 développements sont combinés !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="merge-rebase"></a>
 ## 3. Merge vs Rebase
@@ -79,7 +79,7 @@ git rebase main             # "Déplace" tes commits après main
 
 **Recommandation : Commence par MERGE !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 4. Commandes Essentielles
@@ -93,7 +93,7 @@ git rebase main             # "Déplace" tes commits après main
 | `git branch -d <nom>` | Supprimer branche |
 | `git push origin <nom>` | Pousser branche |
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="workflow"></a>
 ## 5. Workflow Recommandé
@@ -123,4 +123,4 @@ git rebase main             # "Déplace" tes commits après main
 
 **C'est tout ! Branches = Organisation et Propreté.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

@@ -22,7 +22,7 @@
 
 **La solution :** **Push** (toi → GitHub) et **Pull** (GitHub → toi)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="setup"></a>
 ## 2. Setup Rapide
@@ -44,14 +44,14 @@ git push -u origin main
 
 **C'est tout ! Ton code est sur GitHub.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="workflow"></a>
 ## 3. Push/Pull Workflow
 
 **Scenario typique :**
 
-### **📤 Push : Toi → GitHub**
+### **Push : Toi → GitHub**
 ```bash
 # Tu modifies localement
 echo "print('v2 updated')" > app.py
@@ -61,7 +61,7 @@ git add . && git commit -m "Update to v2"
 git push origin main
 ```
 
-### **📥 Pull : GitHub → Toi**
+### **Pull : GitHub → Toi**
 ```bash
 # Récupérer les changes de l'équipe
 git pull origin main
@@ -71,7 +71,7 @@ git fetch origin    # Télécharger sans merger
 git merge origin/main    # Merger ensuite
 ```
 
-### **🔄 Workflow Quotidien**
+### **Workflow Quotidien**
 ```bash
 # Matin : récupérer le travail de l'équipe
 git pull
@@ -84,7 +84,7 @@ git add . && git commit -m "Add feature"
 git push
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="conflits"></a>
 ## 4. Gestion des Conflits
@@ -121,7 +121,7 @@ git push
 
 **Conflit résolu ! L'équipe récupère ta version fusionnée.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 5. Commandes Essentielles
@@ -144,4 +144,4 @@ git push
 
 **GitHub sync = Respiration du développeur : pull → code → push !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

@@ -22,7 +22,7 @@
 
 **Analogie :** C'est comme avoir une copie locale du livre de la bibliothèque.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="tracking"></a>
 ## 2. Tracking des Branches
@@ -49,7 +49,7 @@ git branch -vv    # Voir quelles branches trackent quoi
 
 **Résultat :** Ta branche locale `feature-login` suit `origin/feature-login`.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="sync"></a>
 ## 3. Synchronisation
@@ -74,7 +74,7 @@ git push                         # Si branche trackée
 git push origin feature-login    # Explicite
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="gestion"></a>
 ## 4. Gestion des Branches Distantes
@@ -100,7 +100,7 @@ git checkout -b local-name origin/remote-name
 git checkout remote-name         # Crée automatiquement le tracking
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 5. Commandes Essentielles
@@ -117,4 +117,4 @@ git checkout remote-name         # Crée automatiquement le tracking
 
 **Remote branches = Coordination en équipe. Maîtrise ça = travail fluide !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
