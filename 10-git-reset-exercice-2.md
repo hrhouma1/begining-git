@@ -26,7 +26,7 @@ echo "print('v4')" > app.py && git add . && git commit -m "Version 4"
 git log --oneline    # Noter les hashs
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice1"></a>
 ## 2. Exercice 1: Reset Soft
@@ -47,7 +47,7 @@ git log --oneline   # Combien de commits ?
 - Status : modifs stagées pour commit
 - Log : 2 commits (v1, v2)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice2"></a>
 ## 3. Exercice 2: Reset Mixed  
@@ -69,12 +69,12 @@ git log --oneline   # Combien de commits ?
 - Status : modifs non-stagées
 - Log : 3 commits (v1, v2, v3)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice3"></a>
 ## 4. Exercice 3: Reset Hard
 
-**⚠️ ATTENTION : Reset hard = destructif !**
+**ATTENTION : Reset hard = destructif !**
 
 ```bash
 git add .                    # Stager les changements
@@ -92,7 +92,7 @@ git log --oneline   # Combien de commits ?
 - Status : nothing to commit
 - Log : 2 commits (v1, v2)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="verification"></a>
 ## 5. Vérification
@@ -101,10 +101,10 @@ git log --oneline   # Combien de commits ?
 
 | Mode | Commits | Staging | Working Directory |
 |------|---------|---------|------------------|
-| `--soft` | ↩️ Recule | ✅ Garde | ✅ Garde |
-| `--mixed` | ↩️ Recule | ❌ Supprime | ✅ Garde |
-| `--hard` | ↩️ Recule | ❌ Supprime | ❌ Supprime |
+| `--soft` | Recule | Garde | Garde |
+| `--mixed` | Recule | Supprime | Garde |
+| `--hard` | Recule | Supprime | Supprime |
 
 **Tu as compris les 3 modes ? Parfait ! Reset n'a plus de secrets.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

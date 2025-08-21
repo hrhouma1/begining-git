@@ -22,7 +22,7 @@
 - Liste des fichiers/dossiers à ignorer
 - Git fait comme s'ils n'existaient pas
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="creation"></a>
 ## 2. Création Rapide
@@ -60,7 +60,7 @@ EOF
 git status      # Plus propre !
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="regles"></a>
 ## 3. Règles Communes
@@ -80,7 +80,7 @@ git status      # Plus propre !
 - **Node.js :** `node_modules/`, `npm-debug.log`
 - **Java :** `*.class`, `target/`
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="test"></a>
 ## 4. Test et Vérification
@@ -99,4 +99,4 @@ git ls-files
 
 **Règle d'or : Crée ton `.gitignore` au DÉBUT du projet !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

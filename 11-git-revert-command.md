@@ -21,7 +21,7 @@
 
 **Analogie :** C'est comme dire "Oops, je retire ce que j'ai dit" publiquement.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="vs-reset"></a>
 ## 2. Revert vs Reset
@@ -37,7 +37,7 @@
 - Commit déjà partagé → `revert`
 - Commit encore local → `reset`
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pratique"></a>
 ## 3. Pratique Immédiate
@@ -63,7 +63,7 @@ git revert <hash-version-2>    # Annuler JUSTE la version 2
 cat app.py                     # Vérifier le contenu
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="cas-usage"></a>
 ## 4. Cas d'Usage
@@ -91,4 +91,4 @@ cat app.py                     # Vérifier le contenu
 
 **Revert = Ton filet de sécurité quand tout va mal !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

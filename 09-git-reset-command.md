@@ -20,27 +20,27 @@
 **Concept :** 
 - Déplacer la branche vers un commit antérieur
 - 3 modes selon ce qu'on garde ou supprime
-- ⚠️ DESTRUCTIF si mal utilisé
+- DESTRUCTIF si mal utilisé
 
 **Analogie :** C'est comme effacer des pages d'un cahier.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="modes"></a>
 ## 2. Les 3 Modes de Reset
 
 | Mode | Commits | Index/Staging | Working Directory |
 |------|---------|---------------|------------------|
-| **--soft** | ↩️ Annule | ✅ Conserve | ✅ Conserve |
-| **--mixed** | ↩️ Annule | ❌ Efface | ✅ Conserve |
-| **--hard** | ↩️ Annule | ❌ Efface | ❌ Efface |
+| **--soft** | Annule | Conserve | Conserve |
+| **--mixed** | Annule | Efface | Conserve |
+| **--hard** | Annule | Efface | Efface |
 
 **Mémo simple :**
 - **Soft** = juste les commits
 - **Mixed** = commits + staging  
 - **Hard** = TOUT (dangereux !)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="reset-soft"></a>
 ## 3. Reset Soft
@@ -65,7 +65,7 @@ cat app.py                   # Contenu v2 toujours là
 git commit -m "Version 2 - Avec nouvelles features"
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="reset-mixed"></a>
 ## 4. Reset Mixed
@@ -86,12 +86,12 @@ cat app.py                  # Contenu v3 toujours là, mais pas stagé
 git add . && git commit -m "Version 3 - Refait proprement"
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="reset-hard"></a>
 ## 5. Reset Hard
 
-**⚠️ DANGER ⚠️** : Supprime TOUT, même tes modifications non-commitées !
+**DANGER** : Supprime TOUT, même tes modifications non-commitées !
 
 ```bash
 echo "print('v4')" > app.py && git add . && git commit -m "Version 4"
@@ -108,12 +108,12 @@ cat app.py                 # Revenu à v2, work in progress PERDU !
 
 **Usage :** Quand tu veux VRAIMENT tout jeter et revenir en arrière.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="danger"></a>
 ## 6. Danger et Précautions
 
-**⚠️ Reset est DESTRUCTEUR avec commits partagés !**
+**Reset est DESTRUCTEUR avec commits partagés !**
 
 **JAMAIS faire ça :**
 ```bash
@@ -128,7 +128,7 @@ git push --force              # Force la suppression chez tout le monde
 - Reset INTERDIT sur commits déjà partagés
 - Alternative : `git revert` (plus sûr)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 7. Commandes Pratiques
@@ -143,4 +143,4 @@ git push --force              # Force la suppression chez tout le monde
 
 **Reset = Puissant mais dangereux. Utilise avec précaution !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

@@ -22,7 +22,7 @@
 
 **En gros : diff = tes lunettes pour voir les changements !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="voir"></a>
 ## 2. Voir les Différences
@@ -51,7 +51,7 @@ git log --oneline          # Récupérer les hashs
 git diff <hash1> <hash2>
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="types"></a>
 ## 3. Types de Diff
@@ -64,7 +64,7 @@ git diff <hash1> <hash2>
 | `git diff <commit1> <commit2>` | Entre 2 commits spécifiques |
 | `git diff <branche1> <branche2>` | Entre 2 branches |
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="lecture"></a>
 ## 4. Lecture Rapide
@@ -85,7 +85,7 @@ index abc123..def456 100644
 - `-` = supprimé (rouge dans terminal)
 - `+` = ajouté (vert dans terminal)
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 5. Commandes Pratiques
@@ -99,4 +99,4 @@ index abc123..def456 100644
 
 **Diff = ton détecteur de changements. Utilise-le TOUT LE TEMPS !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
