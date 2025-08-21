@@ -24,7 +24,7 @@
 
 **Analogie simple :** Local = brouillon, Remote = version finale partagée.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="workflow"></a>
 ## 2. Workflow de Base
@@ -45,7 +45,7 @@ Working Directory → Staging Area → Local Repo → Remote Repo
      edit             add           commit        push
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 3. Commandes Essentielles
@@ -73,17 +73,17 @@ Working Directory → Staging Area → Local Repo → Remote Repo
 | `git diff` | Voir les changements |
 | `git branch` | Lister les branches |
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="quotidien"></a>
 ## 4. Cycle Quotidien
 
-### **🌅 Matin : Récupérer le travail de l'équipe**
+### **Matin : Récupérer le travail de l'équipe**
 ```bash
 git pull origin main    # Synchroniser avec l'équipe
 ```
 
-### **💻 Journée : Développer**
+### **Journée : Développer**
 ```bash
 # Modifier tes fichiers...
 git status              # Voir ce qui a changé
@@ -91,17 +91,17 @@ git add .               # Stager tous les changements
 git commit -m "Add new feature"    # Committer
 ```
 
-### **🌆 Soir : Partager ton travail**
+### **Soir : Partager ton travail**
 ```bash
 git push origin main    # Envoyer tes commits
 ```
 
-### **⚡ Workflow ultra-rapide :**
+### **Workflow ultra-rapide :**
 ```bash
 git add . && git commit -m "Quick update" && git push
 ```
 
-### **🚨 En cas d'urgence :**
+### **En cas d'urgence :**
 ```bash
 git stash              # Sauvegarder work in progress
 # Fix urgent...
@@ -116,4 +116,4 @@ git stash pop          # Récupérer ton travail
 
 **C'est tout ! Maîtrise ces commandes = 90% de ton usage Git quotidien.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
