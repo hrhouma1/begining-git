@@ -125,7 +125,7 @@ Il existe trois principaux types de systèmes de contrôle de version, chacun av
 Voici un tableau comparatif des différents systèmes :
 
 | Caractéristique | LVCS | CVCS | DVCS |
-|-||||
+|---|---|---|---|
 | Collaboration | Non | Oui | Excellent |
 | Travail Hors-ligne | Oui | Non | Oui |
 | Sécurité | Faible | Moyenne | Élevée |
@@ -135,7 +135,7 @@ Voici un tableau comparatif des différents systèmes :
 #### 2.5 Outils et Exemples par Type de Système
 
 | Type | Outils | Caractéristiques | Utilisé par |
-||--||-|
+|---|---|---|---|
 | **LVCS** | • RCS<br/>• SCCS<br/>• Source Integrity | • Stockage local uniquement<br/>• Base de données simple<br/>• Pas de réseau requis | • Développeurs solo<br/>• Petits projets<br/>• Systèmes embarqués |
 | **CVCS** | • SVN (Subversion)<br/>• CVS<br/>• Perforce<br/>• ClearCase | • Serveur central<br/>• Numéros de versions séquentiels<br/>• Nécessite une connexion | • Entreprises traditionnelles<br/>• Projets legacy<br/>• Équipes localisées |
 | **DVCS** | • Git<br/>• Mercurial<br/>• Bazaar<br/>• Fossil | • Copies complètes<br/>• Branches légères<br/>• Fusion avancée | • Startups<br/>• Open Source<br/>• Équipes distribuées |
