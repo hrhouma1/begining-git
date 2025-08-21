@@ -21,7 +21,7 @@
 
 **Analogie :** C'est comme avoir plusieurs bureaux pour le même projet.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pourquoi"></a>
 ## 2. Pourquoi Worktree ?
@@ -54,7 +54,7 @@ git worktree add ../hotfix main
 
 **Avantage :** Pas de stash/switch. Juste 2 dossiers, 2 tâches parallèles !
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pratique"></a>
 ## 3. Utilisation Pratique
@@ -114,7 +114,7 @@ git add . && git commit -m "Critical fix"
 
 **Magie :** 3 branches, 3 dossiers, 0 context switching !
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 4. Commandes Essentielles
@@ -159,4 +159,4 @@ git worktree prune                    # Nettoyer les références
 
 **Worktree = Multitâche Git sans compromis !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

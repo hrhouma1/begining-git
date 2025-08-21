@@ -29,7 +29,7 @@ echo "print('v3 fixed')" > app.py && git add . && git commit --amend -m "Version
 
 **Vérification :** `git log --oneline` → 3 commits, le dernier dit "Fixed"
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice2"></a>
 ## Exercice 2: Branches
@@ -59,7 +59,7 @@ git branch -d feature-login feature-api
 
 **Vérification :** `git log --graph --oneline` → voir les merges
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice3"></a>
 ## Exercice 3: Merge vs Rebase
@@ -103,7 +103,7 @@ git log --oneline           # Historique linéaire
 
 **Question :** Quelle différence vois-tu dans `git log` ?
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice4"></a>
 ## Exercice 4: Stash & Cherry-pick
@@ -133,7 +133,7 @@ echo "print('feature complete')" >> app.py && git add . && git commit -m "Featur
 
 **Défi :** Le fix urgent est-il dans main ET dans hotfix ?
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="exercice5"></a>
 ## Exercice 5: Urgence & Reset
@@ -165,11 +165,11 @@ git log --oneline                    # 5 commits : v1,v2,v3,v4,revert-v4
 
 **Leçon :** Revert = sûr pour production, Reset = OK pour local
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 ---
 
-## 🎯 **CHALLENGE FINAL**
+## **CHALLENGE FINAL**
 
 **Peux-tu faire tout ça en 15 minutes ?**
 1. Projet avec 3 commits
@@ -178,6 +178,6 @@ git log --oneline                    # 5 commits : v1,v2,v3,v4,revert-v4
 4. 1 stash + 1 cherry-pick  
 5. 1 reset ou revert d'urgence
 
-**Si oui → tu maîtrises Git ! 🚀**
+**Si oui → tu maîtrises Git !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

@@ -27,7 +27,7 @@
 
 **Lequel choisir ? Ça dépend de ton objectif !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="merge"></a>
 ## 2. Merge Expliqué
@@ -60,7 +60,7 @@ git merge feature-branch
 - ❌ **Historique complexe** : Beaucoup de merge commits
 - ❌ **Moins lisible** : Difficile de suivre l'évolution linéaire
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="rebase"></a>
 ## 3. Rebase Expliqué
@@ -92,7 +92,7 @@ git checkout feature-branch
 - ❌ **Plus complexe** : Plusieurs résolutions de conflit possibles
 - ❌ **Dangereux** : Ne jamais rebase des commits partagés !
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="comparatif"></a>
 ## 4. Tableau Comparatif
@@ -108,12 +108,12 @@ git checkout feature-branch
 | **Collaboration** | Parfait équipe | Attention commits partagés |
 | **Lisibilité** | Complexe avec beaucoup branches | Très claire, linéaire |
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="decision"></a>
 ## 5. Guide de Décision
 
-### **👍 Utilise MERGE quand :**
+### **Utilise MERGE quand :**
 
 **Situations :**
 - Tu débutes avec Git
@@ -130,7 +130,7 @@ git merge feature-branch
    git push origin main
    ```
 
-### **👍 Utilise REBASE quand :**
+### **Utilise REBASE quand :**
 
 **Situations :**
 - Tu veux un historique propre et linéaire
@@ -148,16 +148,16 @@ git merge feature-branch      # Fast-forward merge
      git push origin main
      ```
 
-### **🚨 RÈGLE D'OR :**
+### **RÈGLE D'OR :**
 
 **NEVER REBASE SHARED COMMITS !**
 
    ```bash
-# ❌ DANGER - Ne JAMAIS faire ça :
+# DANGER - Ne JAMAIS faire ça :
 git push origin feature-branch    # Commits partagés
 git rebase main                   # Réécrit commits partagés = CHAOS équipe
 
-# ✅ OK - Rebase uniquement local :
+# OK - Rebase uniquement local :
 git rebase main                   # Commits encore locaux = OK
 git push origin feature-branch    # Push après rebase = OK
 ```
@@ -178,4 +178,4 @@ git push origin feature-branch    # Push après rebase = OK
 
 **L'important = cohérence dans l'équipe, pas la perfection technique !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

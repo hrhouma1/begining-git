@@ -22,7 +22,7 @@
 
 **Analogie :** Tag = autocollant "Version 1.0" sur une page de cahier.
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="types"></a>
 ## 2. Types de Tags
@@ -44,7 +44,7 @@ git tag -a v1.0 -m "Version 1.0 - First stable release"
 - Peut être signé (GPG)
 - Recommandé pour releases officielles
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pratique"></a>
 ## 3. Utilisation Pratique
@@ -96,7 +96,7 @@ git push origin v1.0       # Push un tag spécifique
 git push origin --tags     # Push tous les tags
 ```
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="versions"></a>
 ## 4. Gestion des Versions
@@ -164,4 +164,4 @@ git diff v1.0.0 v2.0.0     # Voir tous les changements
 
 **Tags = Jalons permanents de ton projet. Utilise-les pour toutes tes releases !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)

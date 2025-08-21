@@ -22,7 +22,7 @@
 - Tu ne veux pas commit du code à moitié fait
 - **Solution :** `git stash` → switch → fix → revenir → `git stash pop`
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="pratique"></a>
 ## 2. Pratique Immédiate
@@ -53,7 +53,7 @@ git stash pop               # Récupérer le work in progress
 
 **Magie ! Tes modifications sont revenues.**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="commandes"></a>
 ## 3. Commandes Essentielles
@@ -67,7 +67,7 @@ git stash pop               # Récupérer le work in progress
 | `git stash drop` | Supprimer un stash |
 | `git stash clear` | Vider tous les stashs |
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
 
 <a name="cas-usage"></a>
 ## 4. Cas d'Usage Typique
@@ -82,4 +82,4 @@ git stash pop               # Récupérer le work in progress
 
 **Stash = Ton meilleur ami pour les interruptions !**
 
-#### [⬆️ Retour à la table des matières](#table-des-matieres)
+#### [Retour à la table des matières](#table-des-matieres)
