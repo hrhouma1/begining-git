@@ -1,252 +1,183 @@
+# Exercices Git - Test Pratique
 
 <a name="table-des-matieres"></a>
 
 ## Table des matières
 
+1. [Exercice 1: Basics](#exercice1)
+2. [Exercice 2: Branches](#exercice2)
+3. [Exercice 3: Merge vs Rebase](#exercice3)
+4. [Exercice 4: Stash & Cherry-pick](#exercice4)
+5. [Exercice 5: Urgence & Reset](#exercice5)
 
-### **Objectif :**
-L’objectif de cet assignement est de tester votre compréhension et vos compétences dans l’utilisation des différentes commandes Git. Vous allez simuler un projet en plusieurs étapes qui nécessite l’utilisation des branches, des commits, des fusions, des tags, et des outils comme `stash`, `cherry-pick`, `reset`, et `rebase`. Vous devrez également synchroniser votre travail avec un dépôt distant (GitHub).
+<a name="exercice1"></a>
+## Exercice 1: Basics
 
+**Mission :** Créer un projet, faire 3 commits, corriger le dernier.
 
+```bash
+mkdir test-git && cd test-git && git init
 
-### **Étape 1 : Cloner le projet et préparer l’environnement**
+# 3 commits
+echo "print('v1')" > app.py && git add . && git commit -m "Version 1"
+echo "print('v2')" > app.py && git add . && git commit -m "Version 2"  
+echo "print('v3 with bug')" > app.py && git add . && git commit -m "Version 3"
 
-1. **Cloner le projet depuis GitHub :**
+# Corriger le dernier commit
+echo "print('v3 fixed')" > app.py && git add . && git commit --amend -m "Version 3 - Fixed"
+```
 
-   Pour commencer, vous devez cloner le projet depuis GitHub pour avoir un environnement de travail local.
+**Vérification :** `git log --oneline` → 3 commits, le dernier dit "Fixed"
 
-   ```bash
-   git clone https://github.com/hrhouma1/site-php-1.git
-   ```
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-2. **Entrer dans le répertoire du projet :**
+<a name="exercice2"></a>
+## Exercice 2: Branches
 
-   Accédez au répertoire du projet cloné.
+**Mission :** 2 features en parallèle, merger proprement.
 
-   ```bash
-   cd site-php-1
-   ```
+```bash
+# Base
+echo "print('main')" > main.py && git add . && git commit -m "Main app"
 
+# Feature 1  
+git checkout -b feature-login
+echo "print('login')" > login.py && git add . && git commit -m "Add login"
 
+# Feature 2
+git checkout main && git checkout -b feature-api
+echo "print('api')" > api.py && git add . && git commit -m "Add API"
 
-### **Étape 2 : Configurer les branches de base**
+# Merger tout dans main
+git checkout main
+git merge feature-login
+git merge feature-api
 
-1. **Créer deux nouvelles branches** :
+# Nettoyer
+git branch -d feature-login feature-api
+```
 
-   Créez deux branches pour travailler simultanément sur des fonctionnalités distinctes.
+**Vérification :** `git log --graph --oneline` → voir les merges
 
-   ```bash
-   git checkout -b feature-login
-   git checkout -b feature-dashboard
-   ```
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-2. **Modifications sur les branches :**
+<a name="exercice3"></a>
+## Exercice 3: Merge vs Rebase
 
-   - Sur la branche `feature-login`, modifiez `app.js` pour ajouter une fonctionnalité de connexion.
-   - Sur la branche `feature-dashboard`, modifiez `index.php` pour ajouter un tableau de bord.
+**Mission :** Même scenario, 2 stratégies différentes.
 
-3. **Ajouter et committer les modifications dans chaque branche** :
+### **Stratégie A : Merge**
+```bash
+mkdir test-merge && cd test-merge && git init
+echo "print('base')" > app.py && git add . && git commit -m "Base"
 
-   - Dans `feature-login` :
-     ```bash
-     git add app.js
-     git commit -m "Ajout de la fonctionnalité login"
-     ```
+# Feature branch
+git checkout -b feature
+echo "print('feature')" > feature.py && git add . && git commit -m "Add feature"
 
-   - Dans `feature-dashboard` :
-     ```bash
-     git add index.php
-     git commit -m "Ajout du tableau de bord"
-     ```
+# Main avance
+git checkout main
+echo "print('base v2')" > app.py && git add . && git commit -m "Update base"
 
+# Merge
+git merge feature
+git log --graph --oneline    # Voir l'historique avec merge
+```
 
+### **Stratégie B : Rebase**  
+```bash
+mkdir test-rebase && cd test-rebase && git init
+echo "print('base')" > app.py && git add . && git commit -m "Base"
 
-### **Étape 3 : Fusionner et gérer les branches**
+git checkout -b feature  
+echo "print('feature')" > feature.py && git add . && git commit -m "Add feature"
 
-1. **Basculer sur la branche `main` et fusionner `feature-login`** :
+git checkout main
+echo "print('base v2')" > app.py && git add . && git commit -m "Update base"
 
-   Revenez à la branche `main` et fusionnez `feature-login`.
+# Rebase
+git checkout feature && git rebase main
+git checkout main && git merge feature
+git log --oneline           # Historique linéaire
+```
 
-   ```bash
-   git checkout main
-   git merge feature-login
-   ```
+**Question :** Quelle différence vois-tu dans `git log` ?
 
-2. **Utiliser `git rebase` pour appliquer `feature-dashboard`** :
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-   Au lieu de fusionner, rebasez `feature-dashboard` sur `main` pour maintenir un historique propre.
+<a name="exercice4"></a>
+## Exercice 4: Stash & Cherry-pick
 
-   ```bash
-   git checkout feature-dashboard
-   git rebase main
-   ```
+**Mission :** Jongler avec plusieurs tâches.
 
-   Si un conflit survient, résolvez-le manuellement et continuez le rebase.
+```bash
+mkdir test-stash && cd test-stash && git init
+echo "print('v1')" > app.py && git add . && git commit -m "Version 1"
 
-3. **Fusionner `feature-dashboard` dans `main`** :
+# Tu commences à coder
+echo "print('work in progress')" >> app.py
 
-   Basculez sur `main` et fusionnez la branche `feature-dashboard`.
+# URGENCE ! Tu dois switcher
+git stash                    # Sauvegarder
+git checkout -b hotfix
+echo "print('URGENT FIX')" > fix.py && git add . && git commit -m "Critical fix"
 
-   ```bash
-   git checkout main
-   git merge feature-dashboard
-   ```
+# Cherry-pick le fix vers main
+git checkout main
+git cherry-pick <hash-du-fix>
 
+# Revenir à ton travail
+git stash pop
+echo "print('feature complete')" >> app.py && git add . && git commit -m "Feature done"
+```
 
+**Défi :** Le fix urgent est-il dans main ET dans hotfix ?
 
-### **Étape 4 : Utiliser `git stash` pour sauvegarder les modifications en cours**
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous devez passer temporairement à une autre tâche.
+<a name="exercice5"></a>
+## Exercice 5: Urgence & Reset
 
-1. **Créer une nouvelle branche et commencer des modifications** :
+**Mission :** Simuler une urgence avec reset.
 
-   Créez une branche `feature-payment` et commencez à modifier `payment.php`.
+```bash
+mkdir test-urgence && cd test-urgence && git init
 
-   ```bash
-   git checkout -b feature-payment
-   ```
+# Plusieurs commits
+echo "print('v1')" > app.py && git add . && git commit -m "Version 1"
+echo "print('v2')" > app.py && git add . && git commit -m "Version 2"  
+echo "print('v3')" > app.py && git add . && git commit -m "Version 3"
+echo "print('v4 BROKEN')" > app.py && git add . && git commit -m "Version 4 - Bug!"
 
-2. **Stasher les modifications** :
+# Oh non ! v4 casse tout en production
+git log --oneline                    # Noter le hash de v3
 
-   Avant de basculer sur une autre branche, stashez les modifications non committées.
+# Solution 1 : Reset hard (destructif)
+git reset --hard <hash-v3>           # Retour à v3, v4 disparaît
+git log --oneline                    # Plus que 3 commits
 
-   ```bash
-   git stash
-   ```
+# Solution 2 : Revert (sûr)  
+# Remettre v4 d'abord
+git reset --hard <hash-v4>           # Revenir à v4
+git revert HEAD                      # Créer commit qui annule v4
+git log --oneline                    # 5 commits : v1,v2,v3,v4,revert-v4
+```
 
-3. **Récupérer les modifications plus tard avec `git stash pop`** :
+**Leçon :** Revert = sûr pour production, Reset = OK pour local
 
-   Après avoir terminé d'autres tâches, récupérez vos modifications.
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-   ```bash
-   git stash pop
-   ```
+---
 
+## 🎯 **CHALLENGE FINAL**
 
+**Peux-tu faire tout ça en 15 minutes ?**
+1. Projet avec 3 commits
+2. 2 branches avec features
+3. 1 merge + 1 rebase
+4. 1 stash + 1 cherry-pick  
+5. 1 reset ou revert d'urgence
 
-### **Étape 5 : Utiliser `git cherry-pick` pour appliquer des commits spécifiques**
+**Si oui → tu maîtrises Git ! 🚀**
 
-1. **Créer une nouvelle branche `feature-report`** :
-
-   Basculez sur la branche `main` et créez une nouvelle branche.
-
-   ```bash
-   git checkout main
-   git checkout -b feature-report
-   ```
-
-2. **Lister les commits sur une autre branche** :
-
-   Lister les commits de la branche `feature-dashboard` et choisissez un commit à appliquer.
-
-   ```bash
-   git log --oneline
-   ```
-
-3. **Appliquer un commit spécifique avec `git cherry-pick`** :
-
-   Sélectionnez un commit et appliquez-le sur `feature-report`.
-
-   ```bash
-   git cherry-pick <commit_id>
-   ```
-
-
-
-### **Étape 6 : Taguer des versions de release**
-
-1. **Créer un tag annoté pour une version release** :
-
-   Lorsque vous êtes satisfait de l'état actuel du projet, taguez le commit comme étant la version 1.0.
-
-   ```bash
-   git tag -a v1.0 -m "Version 1.0 - Release initiale"
-   ```
-
-2. **Pousser le tag vers GitHub** :
-
-   Envoyez ce tag vers GitHub.
-
-   ```bash
-   git push origin v1.0
-   ```
-
-
-
-### **Étape 7 : Utiliser `git worktree` pour travailler sur plusieurs branches**
-
-1. **Créer un nouveau répertoire de travail pour une branche** :
-
-   Utilisez `git worktree` pour créer un répertoire de travail distinct pour `feature-testing`.
-
-   ```bash
-   git worktree add ../feature-testing feature-testing
-   ```
-
-2. **Travailler dans ce répertoire** :
-
-   Allez dans le répertoire `feature-testing` et apportez des modifications.
-
-   ```bash
-   cd ../feature-testing
-   ```
-
-
-
-### **Étape 8 : Réinitialiser des modifications avec `git reset` et `git revert`**
-
-1. **Utiliser `git reset` pour réinitialiser des commits** :
-
-   Supposons que vous avez committé quelque chose par erreur. Utilisez `git reset` pour annuler les derniers commits sans les supprimer.
-
-   ```bash
-   git reset --soft HEAD~1
-   ```
-
-2. **Utiliser `git revert` pour annuler un commit** :
-
-   Si vous devez annuler un commit tout en conservant l'historique, utilisez `git revert`.
-
-   ```bash
-   git revert <commit_id>
-   ```
-
-
-
-### **Étape 9 : Pousser et synchroniser avec GitHub**
-
-1. **Pousser les branches locales** :
-
-   Poussez toutes les modifications de la branche `main` et des autres branches vers GitHub.
-
-   ```bash
-   git push origin main
-   git push origin feature-login
-   git push origin feature-dashboard
-   ```
-
-2. **Utiliser `git pull` pour synchroniser les dernières modifications** :
-
-   Récupérez les modifications distantes si d'autres collaborateurs ont fait des modifications sur GitHub.
-
-   ```bash
-   git pull origin main
-   ```
-
-
-
-### **Étape 10 : Résumé des commandes dans cet assignment**
-
-- **Créer et gérer des branches** : `git checkout -b <branch_name>`, `git merge`, `git rebase`
-- **Travailler sur plusieurs répertoires avec `worktree`** : `git worktree add`, `git worktree list`
-- **Gérer des modifications non committées** : `git stash`, `git stash pop`
-- **Appliquer des commits spécifiques** : `git cherry-pick`
-- **Créer et pousser des tags** : `git tag -a <tag_name> -m "message"`, `git push origin --tags`
-- **Réinitialiser et annuler des commits** : `git reset`, `git revert`
-- **Synchroniser avec GitHub** : `git push`, `git pull`
-
-
-
-### **Conclusion**
-
-Cet assignement est conçu pour vous faire pratiquer l'ensemble des commandes Git apprises dans vos cours précédents. Il vous permet de gérer efficacement des branches, des commits, des tags, ainsi que de naviguer entre les répertoires de travail. Assurez-vous de suivre chaque étape et de bien comprendre les raisons pour lesquelles chaque commande est utilisée, car cela vous préparera à travailler sur des projets Git plus complexes en équipe.
+#### [⬆️ Retour à la table des matières](#table-des-matieres)

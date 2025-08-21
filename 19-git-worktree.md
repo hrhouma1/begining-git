@@ -1,169 +1,162 @@
+# Git Worktree
 
 <a name="table-des-matieres"></a>
 
 ## Table des matières
 
+1. [Qu'est-ce que Worktree ?](#definition)
+2. [Pourquoi Worktree ?](#pourquoi)
+3. [Utilisation Pratique](#pratique)
+4. [Commandes Essentielles](#commandes)
 
-### **Objectif :**
-Ce guide vous apprendra à utiliser la commande **`git worktree`**, qui permet de créer plusieurs répertoires de travail (worktrees) pour un même dépôt Git. Vous apprendrez comment utiliser cette fonctionnalité pour travailler sur plusieurs branches en parallèle sans avoir à changer constamment de branche dans le même répertoire.
+<a name="definition"></a>
+## 1. Qu'est-ce que Worktree ?
 
+**Git worktree** = Avoir plusieurs dossiers de travail pour le MÊME repo.
 
+**Concept :**
+- 1 repo Git = normalement 1 dossier  
+- Avec worktree = 1 repo, plusieurs dossiers
+- Chaque dossier peut être sur une branche différente
 
-## **Partie 1 : Théorie**
+**Analogie :** C'est comme avoir plusieurs bureaux pour le même projet.
 
-### **Qu'est-ce que `git worktree` ?**
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-- **`git worktree`** est une commande Git qui vous permet de **créer plusieurs répertoires de travail** pour un même dépôt. Cela signifie que vous pouvez travailler sur plusieurs branches simultanément dans différents répertoires sans avoir à basculer entre les branches dans un seul répertoire.
+<a name="pourquoi"></a>
+## 2. Pourquoi Worktree ?
 
-### **Quand utiliser `git worktree` ?**
-
-- **Travail sur plusieurs branches** : Lorsque vous devez travailler sur plusieurs branches en parallèle et que vous ne voulez pas committer ou stasher vos modifications en cours pour changer de branche.
-- **Tests simultanés** : Si vous voulez tester des branches différentes ou des versions spécifiques de votre projet sans perturber votre environnement de travail actuel.
-- **Comparaison entre branches** : Pour pouvoir comparer directement deux branches de manière pratique en les ayant ouvertes dans deux répertoires différents.
-
-### **Avantages de `git worktree` :**
-
-- **Pas besoin de stasher ou de committer** : Vous pouvez simplement créer un nouveau répertoire de travail et continuer à travailler sur une autre branche sans perdre votre contexte actuel.
-- **Facilite le multitâche** : Idéal pour ceux qui doivent jongler entre plusieurs branches pour les corrections de bugs, les nouvelles fonctionnalités, ou les tests.
-
-
-
-## **Partie 2 : Pratique**
-
-Nous allons maintenant voir comment utiliser **`git worktree`** dans le cadre du projet **site-php-1** pour travailler sur plusieurs branches en parallèle.
-
-### **Étape 1 : Cloner le projet existant depuis GitHub**
-
-Si vous n'avez pas encore de dépôt local, commencez par cloner le projet **site-php-1** depuis GitHub.
-
-1. Ouvrez votre terminal et exécutez la commande suivante pour cloner le projet :
-
-   ```bash
-   git clone https://github.com/hrhouma1/site-php-1.git
-   ```
-
-2. Entrez dans le répertoire du projet cloné :
-
-   ```bash
-   cd site-php-1
-   ```
-
-
-
-### **Étape 2 : Créer un deuxième répertoire de travail avec `git worktree`**
-
-Nous allons maintenant créer un deuxième répertoire de travail pour pouvoir travailler sur une autre branche sans quitter la branche actuelle.
-
-1. **Créer un worktree pour une nouvelle branche** :
-
-   Par exemple, si vous voulez travailler sur une branche `feature-X` tout en restant sur la branche `main` dans votre répertoire de travail actuel, vous pouvez créer un nouveau répertoire de travail pour `feature-X` avec la commande suivante :
-
-   ```bash
-   git worktree add ../feature-X feature-X
-   ```
-
-   - **`../feature-X`** : Spécifie le chemin vers le nouveau répertoire de travail.
-   - **`feature-X`** : Indique la branche à utiliser dans ce nouveau répertoire.
-
-2. **Vérifier le nouveau répertoire de travail** :
-
-   Après avoir créé le worktree, allez dans le nouveau répertoire `feature-X` :
-
-   ```bash
-   cd ../feature-X
-   ```
-
-   Vous êtes maintenant dans un répertoire de travail distinct qui utilise la branche `feature-X`.
-
-
-
-### **Étape 3 : Travailler sur plusieurs branches simultanément**
-
-Nous allons maintenant faire des modifications dans la branche `feature-X` tout en gardant la branche `main` ouverte dans l'autre répertoire.
-
-1. **Modifier `app.js` dans la branche `feature-X`** :
-
-   Dans le répertoire `feature-X`, ouvrez le fichier `app.js` et ajoutez cette ligne :
-
-   ```javascript
-   console.log("Modification dans feature-X");
-   ```
-
-2. **Ajouter et committer les modifications** :
-
-   - Ajoutez les modifications à la zone de staging :
-
-     ```bash
-     git add app.js
-     ```
-
-   - Créez un commit pour cette modification :
-
-     ```bash
-     git commit -m "Ajout d'un log dans app.js sur feature-X"
-     ```
-
-3. **Changer de répertoire de travail pour revenir à `main`** :
-
-   Maintenant, revenez au répertoire de travail principal pour travailler sur la branche `main` :
-
-   ```bash
-   cd ../site-php-1
-   ```
-
-   Vous pouvez continuer à travailler sur la branche `main` ici, tandis que les modifications dans `feature-X` sont séparées dans l'autre répertoire.
-
-
-
-### **Étape 4 : Supprimer un répertoire de travail avec `git worktree`**
-
-Une fois que vous avez terminé votre travail dans le répertoire de travail `feature-X`, vous pouvez le supprimer.
-
-1. **Supprimer le worktree** :
-
-   Pour supprimer le répertoire de travail `feature-X`, tapez la commande suivante :
-
-   ```bash
-   git worktree remove ../feature-X
-   ```
-
-   Cette commande supprime le répertoire de travail tout en conservant l'historique Git dans le dépôt principal.
-
-
-
-### **Étape 5 : Lister les répertoires de travail actifs**
-
-Vous pouvez lister tous les worktrees actifs dans votre projet Git avec la commande suivante :
-
+**Problème classique :**
 ```bash
+# Tu travailles sur feature-A
+git checkout feature-A
+# Code, code, code... (travail non-fini)
+
+# URGENCE : bug sur main !
+git stash                # Sauvegarder work in progress
+git checkout main        # Switch vers main  
+# Fix le bug...
+
+git checkout feature-A   # Revenir à ton travail
+git stash pop           # Récupérer ton work in progress
+```
+
+**Solution worktree :**
+```bash
+# Tu travailles sur feature-A dans dossier principal
+# Urgence ? Créer un nouveau dossier pour main !
+git worktree add ../hotfix main
+
+# Maintenant :
+# - ./           → feature-A (ton travail continue)
+# - ../hotfix    → main (pour le fix urgent)
+```
+
+**Avantage :** Pas de stash/switch. Juste 2 dossiers, 2 tâches parallèles !
+
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
+
+<a name="pratique"></a>
+## 3. Utilisation Pratique
+
+### **Setup de base :**
+```bash
+mkdir demo-worktree && cd demo-worktree
+git init
+
+echo "print('main v1')" > app.py
+git add . && git commit -m "Main version"
+
+# Créer branche feature
+git checkout -b feature-new
+echo "print('feature work')" > feature.py
+git add . && git commit -m "Feature work"
+
+git checkout main
+```
+
+### **Créer worktrees :**
+```bash
+# Créer worktree pour feature-new
+git worktree add ../feature-work feature-new
+
+# Créer worktree pour nouvelle branche
+git worktree add ../hotfix-branch -b hotfix
+
+# Voir tous les worktrees
 git worktree list
 ```
 
-Cela affichera tous les répertoires de travail associés au dépôt, ainsi que la branche qui est utilisée dans chaque répertoire.
+### **Résultat :**
+```
+demo-worktree/       → main branch
+../feature-work/     → feature-new branch  
+../hotfix-branch/    → hotfix branch (nouvelle)
+```
 
+### **Travailler en parallèle :**
+```bash
+# Terminal 1 : Dossier principal (main)
+cd demo-worktree
+echo "print('main updated')" >> app.py
+git add . && git commit -m "Update main"
 
+# Terminal 2 : Feature work
+cd ../feature-work  
+echo "print('feature complete')" >> feature.py
+git add . && git commit -m "Complete feature"
 
-### **Étape 6 : Résumé des commandes `git worktree`**
+# Terminal 3 : Hotfix
+cd ../hotfix-branch
+echo "print('urgent fix')" > fix.py
+git add . && git commit -m "Critical fix"
+```
 
-1. **Créer un nouveau répertoire de travail pour une branche** :
-   ```bash
-   git worktree add ../feature-X feature-X
-   ```
+**Magie :** 3 branches, 3 dossiers, 0 context switching !
 
-2. **Lister tous les répertoires de travail actifs** :
-   ```bash
-   git worktree list
-   ```
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
-3. **Supprimer un répertoire de travail** :
-   ```bash
-   git worktree remove ../feature-X
-   ```
+<a name="commandes"></a>
+## 4. Commandes Essentielles
 
+| Commande | Action |
+|----------|--------|
+| `git worktree add <path> <branch>` | Créer worktree sur branche existante |
+| `git worktree add <path> -b <new-branch>` | Créer worktree + nouvelle branche |
+| `git worktree list` | Voir tous les worktrees |
+| `git worktree remove <path>` | Supprimer worktree |
+| `git worktree prune` | Nettoyer worktrees supprimés |
 
+### **Cas d'usage typiques :**
 
-### **Conclusion**
+**1. Hotfix urgent :**
+```bash
+git worktree add ../hotfix main
+cd ../hotfix && echo "fix" > fix.py
+git add . && git commit -m "Hotfix"
+git push origin main
+```
 
-Ce guide vous a montré comment utiliser **`git worktree`** pour travailler sur plusieurs branches en parallèle sans avoir à changer constamment de branche dans un seul répertoire. Cette fonctionnalité est très utile pour tester des branches différentes, travailler sur des corrections de bugs ou des fonctionnalités séparées, et garder vos environnements de travail propres et organisés.
+**2. Review de PR :**
+```bash
+git worktree add ../pr-review pr-branch
+cd ../pr-review  # Tester la PR sans perturber ton travail
+```
 
-Avec `git worktree`, vous pouvez travailler de manière plus flexible et éviter les interruptions de flux de travail lorsque vous devez passer d'une tâche à une autre.
+**3. Comparaison de branches :**
+```bash
+git worktree add ../version-a branch-a
+git worktree add ../version-b branch-b
+# Compare fichiers entre ../version-a et ../version-b
+```
+
+### **Nettoyage :**
+```bash
+git worktree remove ../feature-work
+git worktree remove ../hotfix-branch  
+git worktree prune                    # Nettoyer les références
+```
+
+**Worktree = Multitâche Git sans compromis !**
+
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
