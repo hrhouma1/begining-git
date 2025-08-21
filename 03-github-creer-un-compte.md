@@ -1,15 +1,8 @@
----
-title: "Chapitre 3 - Créer un compte GitHub"
-description: "Guide complet pour créer un compte GitHub"
-emoji: "⚙️"
----
-
-
----
+# Créer un compte GitHub
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 1. [Introduction](#introduction)
 2. [Étapes pour créer un compte GitHub](#etapes-pour-creer-un-compte-github)
@@ -18,20 +11,20 @@ emoji: "⚙️"
 5. [Conclusion](#conclusion)
 
 <br/>
----
+
 
 <a name="introduction"></a>
 # Introduction
----
+
 
 GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stocker et partager leur code source à l'aide de Git. En plus de fournir un hébergement pour les projets Git, GitHub offre des fonctionnalités pour la collaboration, la révision de code, la gestion des issues (problèmes), et plus encore.
 
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 # 1- **Étapes pour créer un compte GitHub**
----
+
 
 ### 1.1- Aller sur le site de GitHub
 1. Ouvrez votre navigateur web et accédez au site officiel de GitHub à l'adresse suivante : [https://github.com](https://github.com).
@@ -40,7 +33,7 @@ GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stock
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 ### 1.2- Saisir vos informations personnelles
 1. Vous arriverez sur une page où vous devez fournir les informations nécessaires pour créer un compte :
    - **Adresse e-mail** : Saisissez une adresse email valide que vous utiliserez pour vous connecter à GitHub et recevoir des notifications.
@@ -53,7 +46,7 @@ GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stock
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 ### 1.3- Résoudre le Captcha
 1. Après avoir soumis vos informations, GitHub pourrait vous demander de résoudre un Captcha pour prouver que vous n'êtes pas un robot.
 2. Suivez les instructions fournies pour résoudre le Captcha.
@@ -74,11 +67,11 @@ GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stock
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="explorer-github"></a>
 # 2- **Explorer GitHub**
----
+
 
 Une fois que votre compte est créé et actif, vous pouvez commencer à explorer les fonctionnalités principales de GitHub :
 
@@ -91,7 +84,7 @@ Une fois que votre compte est créé et actif, vous pouvez commencer à explorer
 - GitHub permet de collaborer facilement avec d'autres développeurs via des fonctionnalités comme les **pull requests** (demandes de fusion) et les **issues** (problèmes).
 - Vous pouvez également suivre d'autres utilisateurs, étoiler (star) des projets, et forker des dépôts pour les cloner et y apporter vos propres modifications.
 
----
+
 
 ## **Conseils de sécurité**
 - **Utilisez un mot de passe sécurisé** et changez-le régulièrement pour protéger votre compte.
@@ -100,9 +93,9 @@ Une fois que votre compte est créé et actif, vous pouvez commencer à explorer
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 <a name="conclusion"></a>
 # 3- **Conclusion**
----
+
 
 Créer un compte GitHub est une étape simple mais essentielle pour tout développeur souhaitant travailler avec Git et partager ou collaborer sur des projets de code source. Une fois votre compte créé, vous pouvez héberger vos projets, collaborer avec d'autres développeurs, et contribuer à des projets open source à travers le monde. Profitez des outils de collaboration et de gestion de projet que GitHub met à votre disposition pour améliorer vos workflows de développement.
