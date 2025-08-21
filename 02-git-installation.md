@@ -190,6 +190,7 @@ Après avoir installé Git sur n'importe quel système d'exploitation, il est n�
 - Ce cours couvre les bases de l'installation de Git sur différents systèmes d'exploitation. Assurez-vous de bien configurer Git pour un usage optimal dans vos projets.
 
 <br/>
+
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 
 <a name="reference"></a>
