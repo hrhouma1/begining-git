@@ -29,7 +29,7 @@
 La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aussi être dangereuse si elle est mal utilisée. Ce guide va vous expliquer **qu'est-ce que git reset**, comment il fonctionne, et comment l'utiliser de manière sécurisée avec des exemples pratiques sur un projet que nous créerons ensemble.
 
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -43,7 +43,7 @@ La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aus
 
 `git reset` est une commande Git qui permet de réinitialiser l'état de votre dépôt à une version antérieure. Il modifie la position du pointeur de la branche actuelle et, en fonction des options utilisées, peut également modifier les fichiers dans la zone de staging et/ou dans le répertoire de travail.
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="les-trois-modes-principaux-de-git-reset"></a>
@@ -55,7 +55,7 @@ La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aus
 
 3. **`--hard`** : Réinitialise le pointeur HEAD, la zone de staging et le répertoire de travail. Cela supprime toutes les modifications non committées, y compris les fichiers modifiés.
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="quand-utiliser-git-reset"></a>
@@ -64,7 +64,7 @@ La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aus
 - **Annuler des modifications locales** : Pour annuler des modifications dans la zone de staging ou dans le répertoire de travail.
 - **Nettoyer l'historique** : Pour revenir à un état antérieur dans l'historique Git.
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -111,7 +111,7 @@ git commit -m "Structure initiale du projet"
 
    
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-2"></a>
@@ -202,7 +202,7 @@ experiment-reset
 ```
 
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -235,7 +235,7 @@ Supposons que vous réalisiez que vous ne voulez pas avoir trois commits sépar�
 
 
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-4-utiliser-git-reset-mixed"></a>
@@ -261,7 +261,7 @@ Supposons que vous avez ajouté des fichiers à la zone de staging par erreur et
 
 
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-5-utiliser-git-reset-hard"></a>
@@ -305,7 +305,7 @@ Supposons que vous ayez modifié plusieurs fichiers et que vous réalisez que vo
 
 
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-6"></a>
@@ -347,7 +347,7 @@ git push origin main
 ```
 
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -414,7 +414,7 @@ git status                 # Vérifier l'état
 git log --oneline --graph  # Historique graphique
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -443,7 +443,7 @@ git log --oneline --graph  # Historique graphique
 
 Vous pouvez désormais utiliser Git Reset efficacement tout en évitant les pièges courants !
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 

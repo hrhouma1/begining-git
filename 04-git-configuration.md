@@ -18,7 +18,7 @@
 
 La **configuration de Git** permet de définir les paramètres globaux ou locaux pour un projet Git. Lorsque vous créez un projet et que vous l'enregistrez dans un dépôt local, il est essentiel de spécifier le nom de l'auteur et son adresse email. Ces informations peuvent être stockées dans un fichier de configuration qui peut être global ou local.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -57,7 +57,7 @@ Le contenu du fichier `.gitconfig` ressemblera à ceci :
     email = rehoumahaythem@gmail.com
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -104,7 +104,7 @@ Haythem est développeur de logiciels et travaille sur un projet appelé **MyPro
    ```
    L'historique montrera l'auteur comme "Haythem" et l'adresse email associée.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -138,7 +138,7 @@ Le fichier `.git/config` du projet contiendra :
     email = localhaythem@gmail.com
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -187,7 +187,7 @@ Haythem doit désormais travailler sur un serveur de développement où plusieur
 
 
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -198,7 +198,7 @@ Haythem doit désormais travailler sur un serveur de développement où plusieur
 
 La configuration Git est une étape essentielle pour assurer que chaque commit est correctement attribué à l'auteur avec les informations appropriées. Il est possible de configurer Git au niveau global ou local, en fonction du contexte de développement. La configuration globale est utile pour les projets personnels ou sur une machine dédiée, tandis que la configuration locale est pratique lorsque plusieurs développeurs partagent un même environnement. Ce cours vous a montré comment configurer Git aussi bien au niveau global que local, avec des études de cas pour illustrer les différents scénarios d'utilisation.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 

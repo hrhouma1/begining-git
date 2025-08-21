@@ -40,7 +40,7 @@ Prérequis et Dépôts :
   • Plateforme collaborative pour héberger et partager votre code
 
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -62,7 +62,7 @@ Cette commande télécharge le projet dans votre machine. Ensuite, entrez dans l
 cd site-php-1
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -76,7 +76,7 @@ Si vous démarrez un tout nouveau projet, vous devez initialiser Git dans le dos
 git init
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -92,7 +92,7 @@ git status
 
 Cela vous montrera quels fichiers ont été modifiés ou ajoutés.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -106,7 +106,7 @@ Avant de pouvoir enregistrer des modifications, vous devez les "stager" (prépar
 git add .
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -120,7 +120,7 @@ Maintenant que les fichiers sont ajoutés à la zone de staging, nous allons cr�
 git commit -m "Premier commit avec le projet PHP CRUD"
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -134,7 +134,7 @@ git remote add origin https://github.com/hrhouma1/site-php-1.git
 git branch -M main
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -148,7 +148,7 @@ Maintenant que tout est configuré, nous allons envoyer les commits locaux vers 
 git push -u origin main
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -169,7 +169,7 @@ git add .
 git commit -m "Ajout d'une nouvelle fonctionnalité"
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -195,7 +195,7 @@ Si vous travaillez avec d'autres développeurs, vous devrez souvent récupérer 
 git pull origin main
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -230,7 +230,7 @@ git status
 
 Vous verrez que `app.js` est marqué comme modifié.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -246,7 +246,7 @@ git checkout -- app.js
 
 Cela annulera toutes les modifications locales non committées sur ce fichier et le ramènera à son état dans le dernier commit.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -260,7 +260,7 @@ Si vous avez modifié plusieurs fichiers (comme `index.php`, `connection.php`, e
 git reset --hard
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -274,7 +274,7 @@ Si vous devez renommer la branche actuelle, vous pouvez le faire avec la command
 git branch -m production
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -288,7 +288,7 @@ Si une branche locale n'est plus nécessaire, vous pouvez la supprimer avec cett
 git branch -d feature/new-functionality
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -302,7 +302,7 @@ Pour supprimer une branche sur GitHub, utilisez cette commande :
 git push origin --delete feature/new-functionality
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -316,7 +316,7 @@ Pour afficher un historique visuel des commits avec les branches et les fusions,
 git log --graph --oneline --all
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -330,7 +330,7 @@ Si vous souhaitez revenir à un commit précédent sans affecter les autres comm
 git checkout abc1234
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -359,7 +359,7 @@ git checkout abc1234
 
 ---
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -444,7 +444,7 @@ Class Connection{
 
 Après avoir modifié les informations de connexion, enregistrez le fichier `connection.php`.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -463,7 +463,7 @@ git checkout -b update-connection-settings
 
 Cette commande crée et bascule vers une nouvelle branche appelée `update-connection-settings`.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -485,7 +485,7 @@ git add connection.php
 git commit -m "Modification des informations de connexion dans connection.php"
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -503,7 +503,7 @@ git push -u origin update-connection-settings
 
 Cette commande enverra votre nouvelle branche et vos modifications sur GitHub.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -518,7 +518,7 @@ Maintenant que la branche est sur GitHub, vous pouvez créer une pull request po
 3. Ajoutez un titre et une description, puis cliquez sur **Create Pull Request**.
 4. Vous pouvez ensuite fusionner cette branche dans `main` une fois que vous avez vérifié les modifications.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -547,7 +547,7 @@ Voici un résumé des commandes que vous avez utilisées dans cette section :
    git push -u origin update-connection-settings
    ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -559,7 +559,7 @@ En suivant ces étapes, vous aurez appris à modifier un fichier dans un projet 
 
 Référence : [https://www.youtube.com/watch?v=3RjQznt-8kE](https://www.youtube.com/watch?v=3RjQznt-8kE)
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---

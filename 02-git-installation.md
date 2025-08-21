@@ -22,7 +22,7 @@
 
 Git est un **système de contrôle de version** distribué qui permet de suivre les modifications dans le code source sur votre machine locale.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -66,7 +66,7 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
   ```
 - Si l'installation est réussie, vous verrez la version de Git installée s'afficher, par exemple : `git version 2.34.1`.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="installation-ubuntu"></a>
@@ -113,7 +113,7 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
   ```
 - Cela devrait afficher la version de Git installée, par exemple : `git version 2.34.1`.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -144,7 +144,7 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
   ```
 - Si l’installation est réussie, la version de Git installée s’affichera.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -176,7 +176,7 @@ Après avoir installé Git sur n'importe quel système d'exploitation, il est n�
   git config --list
   ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="conclusion"></a>
@@ -190,7 +190,7 @@ Après avoir installé Git sur n'importe quel système d'exploitation, il est n�
 - Ce cours couvre les bases de l'installation de Git sur différents systèmes d'exploitation. Assurez-vous de bien configurer Git pour un usage optimal dans vos projets.
 
 <br/>
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 
 <a name="reference"></a>
 
@@ -200,5 +200,5 @@ Après avoir installé Git sur n'importe quel système d'exploitation, il est n�
 - https://phoenixnap.com/kb/how-to-install-git-windows
 
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 

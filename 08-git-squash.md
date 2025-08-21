@@ -50,7 +50,7 @@ Git Squash est une commande qui permet de combiner plusieurs commits en un seul.
 - Un historique plus propre et plus facile à lire.
 - Meilleure organisation des commits (chaque commit ayant un sens plus global).
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -106,7 +106,7 @@ git add .
 git commit -m "Structure initiale du projet"
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -179,7 +179,7 @@ debug=true" >> config.txt
 * commit 0 - Structure initiale du projet (main)
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -298,7 +298,7 @@ AVANT squash:                    APRÈS squash:
 - Un seul commit décrivant l'ensemble des améliorations
 - Plus facile pour les futures révisions de code
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -343,7 +343,7 @@ mon-projet-squash/
 git push origin main
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -404,7 +404,7 @@ git rebase -i HEAD~N        # Squash N derniers commits
 git log --oneline --graph   # Visualiser l'historique
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -435,7 +435,7 @@ git log --oneline --graph   # Visualiser l'historique
 
 Vous pouvez désormais utiliser cette technique pour maintenir un historique Git professionnel et bien organisé !
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 

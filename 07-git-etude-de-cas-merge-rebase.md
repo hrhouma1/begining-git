@@ -28,7 +28,7 @@
 
 Cette étude de cas vous permettra de comprendre concrètement les différences entre **Git Merge** et **Git Rebase** à travers un projet exemple complet. Vous apprendrez quand utiliser chaque approche et comment gérer les conflits.
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -53,7 +53,7 @@ Cette étude de cas vous permettra de comprendre concrètement les différences 
 - Plus sûr car ne modifie pas l'historique existant
 - Recommandé pour les branches partagées
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="git-rebase"></a>
@@ -73,7 +73,7 @@ Cette étude de cas vous permettra de comprendre concrètement les différences 
 
 **⚠️ Règle d'Or :** Ne jamais rebaser des branches publiques partagées !
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="comparaison"></a>
@@ -91,7 +91,7 @@ Cette étude de cas vous permettra de comprendre concrètement les différences 
 - **Rebase** : Pour nettoyer l'historique de vos branches locales
 - **Fast-forward** : Évite les commits de fusion inutiles
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -181,7 +181,7 @@ git add .
 git commit -m "Version initiale du site web"
 ```
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-2"></a>
@@ -232,7 +232,7 @@ main
       * Ajout navigation dans header
 ```
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-3"></a>
@@ -267,7 +267,7 @@ main (HEAD)
 - Le pointeur main avance simplement
 - Historique linéaire préservé
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-4"></a>
@@ -365,7 +365,7 @@ main (HEAD)
   * Version initiale du site web
 ```
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-5"></a>
@@ -495,7 +495,7 @@ git commit -m "Résolution conflit: fusion contenu main + footer"
 - `=======` : Séparateur entre les deux versions
 - `>>>>>>> feature/footer` : Fin du conflit, contenu de la branche à fusionner
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 <a name="etape-6"></a>
@@ -609,7 +609,7 @@ main (HEAD)
   * [historique précédent...]
 ```
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -673,7 +673,7 @@ git branch                            # Lister branches
 git status                            # État du dépôt
 ```
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 
@@ -719,6 +719,6 @@ git status                            # État du dépôt
 
 Vous pouvez désormais choisir la stratégie appropriée selon le contexte et maintenir un historique Git professionnel !
 
-[⬆️ retour à la table des matières](#table-des-matieres)
+[⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 

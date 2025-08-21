@@ -26,7 +26,7 @@ emoji: "⚙️"
 
 GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stocker et partager leur code source à l'aide de Git. En plus de fournir un hébergement pour les projets Git, GitHub offre des fonctionnalités pour la collaboration, la révision de code, la gestion des issues (problèmes), et plus encore.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -37,7 +37,7 @@ GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stock
 1. Ouvrez votre navigateur web et accédez au site officiel de GitHub à l'adresse suivante : [https://github.com](https://github.com).
 2. Sur la page d'accueil de GitHub, vous verrez un bouton en haut à droite intitulé **"Sign up"** (S'inscrire). Cliquez dessus pour commencer la procédure d'inscription.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -50,7 +50,7 @@ GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stock
 
 2. Une fois toutes les informations saisies, cliquez sur le bouton **"Create account"** (Créer un compte).
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -71,7 +71,7 @@ GitHub est une plateforme en ligne qui permet aux développeurs de gérer, stock
 1. Après la création de votre compte, vous pouvez vous connecter en cliquant sur le bouton **"Sign In"** (Se connecter) en haut à droite de la page GitHub.
 2. Entrez l'adresse e-mail et le mot de passe que vous avez définis lors de l'inscription, puis cliquez sur **"Sign In"**.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -97,7 +97,7 @@ Une fois que votre compte est créé et actif, vous pouvez commencer à explorer
 - **Utilisez un mot de passe sécurisé** et changez-le régulièrement pour protéger votre compte.
 - **Activez l'authentification à deux facteurs (2FA)** pour ajouter une couche de sécurité supplémentaire à votre compte GitHub. Cela peut être fait dans les paramètres de sécurité de votre compte.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---

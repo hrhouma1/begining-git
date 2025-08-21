@@ -27,7 +27,7 @@ emoji: "🔧"
 
 Les **commandes de workflow Git** permettent de gérer un projet localement et de le synchroniser avec un dépôt distant comme GitHub. Ce guide vous montrera les différentes étapes pour gérer un dépôt Git local, effectuer des commits, et pousser le code vers GitHub.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -37,7 +37,7 @@ Les **commandes de workflow Git** permettent de gérer un projet localement et d
 ---
 Un **dépôt local** est comme un dossier spécial sur votre ordinateur qui garde une trace de tous les changements que vous faites dans vos fichiers. Imaginez-le comme un album photo personnel où vous conservez toutes les versions de vos photos - chaque modification est enregistrée et vous pouvez revenir en arrière si nécessaire.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -50,7 +50,7 @@ Un **dépôt local** est comme un dossier spécial sur votre ordinateur qui gard
 
 Un **dépôt distant** (comme GitHub), c'est comme un album photo en ligne que vous pouvez partager avec d'autres personnes. C'est une copie de votre projet qui est stockée sur Internet.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -82,7 +82,7 @@ Cette organisation vous permet de travailler sereinement sur votre ordinateur et
 
 
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -108,7 +108,7 @@ Ces dépôts distants vous permettent de :
 C'est un peu comme si vous aviez un super assistant qui garde une copie de tout votre travail en lieu sûr et qui vous aide à travailler en équipe !
 
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -199,7 +199,7 @@ git log
 git log --oneline
 ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -234,7 +234,7 @@ git log --oneline
 ### 4 - Vérifier la synchronisation
 Vérifiez sur GitHub que la branche principale (`main`) a bien été créée et que tous les fichiers locaux sont disponibles sur le dépôt distant.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -276,7 +276,7 @@ Remplacez l'URL par celle en SSH : `git@github.com:<username>/<repository>.git`.
    git push origin main
    ```
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
@@ -286,7 +286,7 @@ Remplacez l'URL par celle en SSH : `git@github.com:<username>/<repository>.git`.
 
 Ce guide vous a montré les commandes essentielles du workflow Git pour créer un dépôt local, gérer les commits, et synchroniser avec un dépôt distant comme GitHub, en utilisant HTTPS ou SSH. Avec ces étapes, vous pouvez efficacement gérer vos projets et collaborer avec d'autres développeurs sur GitHub. Ce cours couvre les commandes de base du workflow Git et vous guide à travers les processus locaux et distants.
 
-#### [⬆️ retour à la table des matières](#table-des-matieres)
+#### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
 
 ---
