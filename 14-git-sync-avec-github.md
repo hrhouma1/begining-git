@@ -1,18 +1,13 @@
----
-title: "Chapitre 14 - Synchronisation avec GitHub"
-description: "Découvrez comment synchroniser votre dépôt local Git avec GitHub. Vous apprendrez à pousser vos changements locaux vers GitHub, à récupérer les changements distants, et à garder votre dépôt à jour avec les dernières modifications de votre équipe."
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à synchroniser votre dépôt local Git avec GitHub. Vous apprendrez à pousser vos changements locaux vers GitHub, à récupérer les changements distants, et à garder votre dépôt à jour avec les dernières modifications de votre équipe.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -25,7 +20,7 @@ La synchronisation entre un dépôt Git local et un dépôt GitHub permet de mai
 3. **`git fetch`** : Récupère les modifications du dépôt GitHub, mais ne les fusionne pas automatiquement. Vous devez ensuite examiner ou fusionner ces modifications manuellement.
 4. **`git clone`** : Télécharge un dépôt GitHub dans un nouveau répertoire local.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -87,7 +82,7 @@ git commit -m "Initialisation du projet avec structure de base"
 
 **Note :** Pour la suite, vous devrez créer un dépôt GitHub vide sur github.com et obtenir son URL.
 
----
+
 
 ### **Étape 2 : Ajouter et committer des modifications locales**
 
@@ -154,7 +149,7 @@ git add FAQ.md
 git commit -m "Ajout FAQ avec documentation synchronisation"
 ```
 
----
+
 
 ### **Étape 3 : Pousser les modifications locales vers GitHub avec `git push`**
 
@@ -190,7 +185,7 @@ Maintenant nous devons connecter notre projet local à GitHub et y pousser nos m
 **Représentation ASCII de la synchronisation :**
 ```
 Local Repository          GitHub Repository
------------------         ------------------
+--         
 * FAQ doc                 * FAQ doc                ←─┐
 * main.py v1.1           * main.py v1.1            │ push
 * Initial commit         * Initial commit         ──┘
@@ -207,7 +202,7 @@ git push origin main ───────────────────�
    - **`origin`** : Nom du dépôt distant (GitHub)
    - **`main`** : Branche principale du projet
 
----
+
 
 ### **Étape 4 : Récupérer les changements depuis GitHub avec `git pull`**
 
@@ -239,7 +234,7 @@ Imaginez qu'un collaborateur a modifié le fichier `config.json` directement sur
 **Représentation ASCII du pull :**
 ```
 GitHub Repository         Local Repository
-------------------        -----------------
+        --
 * config v1.2.0    ────→  * config v1.2.0      ←─┐
 * FAQ doc                 * FAQ doc              │ pull
 * main.py v1.1            * main.py v1.1         │
@@ -264,7 +259,7 @@ CONFLICT (content): Merge conflict in config.json
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
----
+
 
 ### **Étape 5 : Travailler avec `git fetch` pour plus de contrôle**
 
@@ -297,7 +292,7 @@ git fetch:  GitHub ──→ Local (staging) ──→ (manuel) ──→ Workin
 git pull:   GitHub ─────────────────────────────────→ Working Directory
 ```
 
----
+
 
 ### **Étape 6 : Créer une nouvelle branche et la pousser vers GitHub**
 
@@ -345,7 +340,7 @@ Créons une branche pour travailler sur une nouvelle fonctionnalité sans affect
 **Représentation ASCII des branches :**
 ```
 GitHub:                     Local:
---------                    -------
+--                    -
 main                        main
 ├─ Initial commit          ├─ Initial commit  
 ├─ main.py v1.1            ├─ main.py v1.1
@@ -355,7 +350,7 @@ feature/ameliorations       feature/ameliorations
 └─ interface.py            └─ interface.py
 ```
 
----
+
 
 ### **Étape 7 : Gérer les conflits lors de la synchronisation**
 
@@ -400,7 +395,7 @@ Lorsque vous et un collaborateur modifiez le même fichier, un conflit peut surv
 - Communiquer avec l'équipe sur les modifications importantes
 - Faire des commits fréquents et petits
 
----
+
 
 ## **Résumé des commandes**
 
@@ -469,7 +464,7 @@ git commit -m "Résolution conflit"
 git push origin main
 ```
 
----
+
 
 ## **Conclusion**
 
@@ -526,4 +521,4 @@ git push origin main
 
 Vous pouvez désormais collaborer efficacement sur GitHub et maintenir vos projets synchronisés !
 
----
+

@@ -1,18 +1,13 @@
----
-title: "Chapitre 12 - Fichier .gitignore"
-description: "Découvrez comment utiliser le fichier .gitignore pour exclure certains fichiers et dossiers du suivi par Git"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser le fichier `.gitignore` pour exclure certains fichiers et dossiers du suivi par Git. Vous allez comprendre ce qu’est un fichier `.gitignore`, pourquoi il est important, et comment l’utiliser efficacement dans votre projet.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -26,7 +21,7 @@ Ce guide vous apprendra à utiliser le fichier `.gitignore` pour exclure certain
 - **Protéger les informations sensibles** : Comme les fichiers contenant des mots de passe ou des informations d'accès (fichiers `.env`).
 - **Réduire la taille du dépôt** : En excluant les fichiers inutiles, votre dépôt Git reste plus léger et plus rapide.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -67,7 +62,7 @@ git add .
 git commit -m "Initialisation du projet avec fichiers de base"
 ```
 
----
+
 
 ### **Étape 2 : Créer un fichier `.gitignore`**
 
@@ -87,7 +82,7 @@ Nous allons créer un fichier `.gitignore` pour indiquer à Git quels fichiers e
 
    Ouvrez le fichier `.gitignore` dans votre éditeur de texte (VSCode, Sublime Text, etc.).
 
----
+
 
 ### **Étape 3 : Créer et configurer le fichier .gitignore**
 
@@ -157,7 +152,7 @@ EOF
 - `build/` : Ignore le dossier de compilation
 - `!uploads/*.jpg` : Exception - garde les fichiers .jpg dans uploads/
 
----
+
 
 ### **Étape 4 : Tester le fichier `.gitignore`**
 
@@ -254,7 +249,7 @@ projet-gitignore-demo/
     └── data.txt       ✗ (ignoré)
 ```
 
----
+
 
 ### **Étape 5 : Ajouter et committer le fichier `.gitignore`**
 
@@ -272,7 +267,7 @@ Une fois que vous avez configuré votre fichier `.gitignore`, vous devez l'ajout
    git commit -m "Ajout du fichier .gitignore pour exclure les fichiers sensibles et temporaires"
    ```
 
----
+
 
 ### **Étape 6 : Finaliser le projet**
 
@@ -331,7 +326,7 @@ Fichiers/dossiers ignorés (non suivis):
 git push origin main
 ```
 
----
+
 
 ## **Résumé des commandes**
 
@@ -436,7 +431,7 @@ uploads/*
 !uploads/README.md
 ```
 
----
+
 
 ## **Conclusion**
 
@@ -477,4 +472,4 @@ uploads/*
 
 Vous pouvez désormais créer des projets Git propres et sécurisés grâce au fichier `.gitignore` !
 
----
+

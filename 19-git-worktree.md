@@ -1,19 +1,13 @@
----
-title: "Chapitre 19 - Commande Git Worktree"
-description: "Découvrez comment utiliser la commande **`git worktree`**, qui permet de créer plusieurs répertoires de travail (worktrees) pour un même dépôt Git. Vous apprendrez comment utiliser cette fonctionnalité pour travailler sur plusieurs branches en parallèle sans avoir à changer constamment de branche dans le même répertoire."
 
----
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser la commande **`git worktree`**, qui permet de créer plusieurs répertoires de travail (worktrees) pour un même dépôt Git. Vous apprendrez comment utiliser cette fonctionnalité pour travailler sur plusieurs branches en parallèle sans avoir à changer constamment de branche dans le même répertoire.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -32,7 +26,7 @@ Ce guide vous apprendra à utiliser la commande **`git worktree`**, qui permet d
 - **Pas besoin de stasher ou de committer** : Vous pouvez simplement créer un nouveau répertoire de travail et continuer à travailler sur une autre branche sans perdre votre contexte actuel.
 - **Facilite le multitâche** : Idéal pour ceux qui doivent jongler entre plusieurs branches pour les corrections de bugs, les nouvelles fonctionnalités, ou les tests.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -54,7 +48,7 @@ Si vous n'avez pas encore de dépôt local, commencez par cloner le projet **sit
    cd site-php-1
    ```
 
----
+
 
 ### **Étape 2 : Créer un deuxième répertoire de travail avec `git worktree`**
 
@@ -81,7 +75,7 @@ Nous allons maintenant créer un deuxième répertoire de travail pour pouvoir t
 
    Vous êtes maintenant dans un répertoire de travail distinct qui utilise la branche `feature-X`.
 
----
+
 
 ### **Étape 3 : Travailler sur plusieurs branches simultanément**
 
@@ -119,7 +113,7 @@ Nous allons maintenant faire des modifications dans la branche `feature-X` tout 
 
    Vous pouvez continuer à travailler sur la branche `main` ici, tandis que les modifications dans `feature-X` sont séparées dans l'autre répertoire.
 
----
+
 
 ### **Étape 4 : Supprimer un répertoire de travail avec `git worktree`**
 
@@ -135,7 +129,7 @@ Une fois que vous avez terminé votre travail dans le répertoire de travail `fe
 
    Cette commande supprime le répertoire de travail tout en conservant l'historique Git dans le dépôt principal.
 
----
+
 
 ### **Étape 5 : Lister les répertoires de travail actifs**
 
@@ -147,7 +141,7 @@ git worktree list
 
 Cela affichera tous les répertoires de travail associés au dépôt, ainsi que la branche qui est utilisée dans chaque répertoire.
 
----
+
 
 ### **Étape 6 : Résumé des commandes `git worktree`**
 
@@ -166,7 +160,7 @@ Cela affichera tous les répertoires de travail associés au dépôt, ainsi que 
    git worktree remove ../feature-X
    ```
 
----
+
 
 ### **Conclusion**
 

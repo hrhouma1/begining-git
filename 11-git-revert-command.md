@@ -1,18 +1,13 @@
----
-title: "Chapitre 11 - Commande Git Revert"
-description: "Découvrez comment utiliser Git Revert pour annuler un ou plusieurs commits sans supprimer l'historique des modifications"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser la commande `git revert`, qui permet d'annuler un ou plusieurs commits sans supprimer l'historique des modifications. Contrairement à `git reset`, `git revert` conserve les commits et ajoute un nouveau commit qui "inverse" les changements d'un commit spécifique.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -24,7 +19,7 @@ Ce guide vous apprendra à utiliser la commande `git revert`, qui permet d'annul
 - **Corriger un commit erroné** : Si un commit a introduit un bug ou une erreur, vous pouvez utiliser `git revert` pour revenir en arrière tout en conservant l'historique des modifications.
 - **Travail en équipe** : Lorsque vous collaborez avec d'autres développeurs, `git revert` est plus sûr que `git reset`, car il ne modifie pas l'historique partagé.
   
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -63,7 +58,7 @@ git add .
 git commit -m "Initialisation du projet revert demo"
 ```
 
----
+
 
 ### **Étape 2 : Créer une nouvelle branche pour tester `git revert`**
 
@@ -75,7 +70,7 @@ Nous allons créer une nouvelle branche pour faire des modifications et tester l
    git checkout -b revert-test-branch
    ```
 
----
+
 
 ### **Étape 3 : Faire plusieurs modifications et commits**
 
@@ -173,7 +168,7 @@ revert-test-branch
     * 5a8c2e1 (main) Initialisation du projet revert demo
 ```
 
----
+
 
 ### **Étape 4 : Utiliser `git revert` pour annuler un commit**
 
@@ -239,7 +234,7 @@ revert-test-branch
 - Les changements sont "inversés" par un nouveau commit
 - Plus sûr pour le travail collaboratif
 
----
+
 
 ### **Étape 5 : Vérifier les modifications dans le fichier `styles.css`**
 
@@ -261,7 +256,7 @@ Après avoir annulé le commit qui modifiait `styles.css`, nous allons vérifier
 
    ont été supprimés par le commit de revert.
 
----
+
 
 ### **Étape 6 : Finaliser l'exercice revert**
 
@@ -302,7 +297,7 @@ main
 git push origin main
 ```
 
----
+
 
 ## **Résumé des commandes**
 
@@ -359,7 +354,7 @@ git merge revert-test-branch   # Fusionner si désiré
 git branch -d revert-test-branch  # Supprimer branche test
 ```
 
----
+
 
 ## **Conclusion**
 
@@ -390,4 +385,4 @@ git branch -d revert-test-branch  # Supprimer branche test
 
 Vous pouvez désormais utiliser Git Revert efficacement tout en préservant l'intégrité de l'historique de votre projet !
 
----
+

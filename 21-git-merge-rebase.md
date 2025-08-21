@@ -1,19 +1,13 @@
----
-title: "Chapitre 21 - Git Merge et Rebase"
-description: "Découvrez comment utiliser les commandes **`git merge`** et **`git rebase`**, deux façons différentes de combiner les modifications de branches dans Git. Vous apprendrez quand utiliser chaque approche et comment les mettre en pratique dans votre projet Git."
 
----
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à comprendre et utiliser les commandes **`git merge`** et **`git rebase`**, deux façons différentes de combiner les modifications de branches dans Git. Vous apprendrez quand utiliser chaque approche et comment les mettre en pratique dans votre projet Git.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -40,7 +34,7 @@ Ce guide vous apprendra à comprendre et utiliser les commandes **`git merge`** 
 - **Merge** : Conserve l'historique complet des deux branches, ce qui peut créer des "branches" dans l'historique.
 - **Rebase** : Réapplique les commits d'une branche sur une autre, créant un historique linéaire sans commits de fusion supplémentaires.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -62,7 +56,7 @@ Si vous n'avez pas encore de dépôt local, commencez par cloner le projet **sit
    cd site-php-1
    ```
 
----
+
 
 ### **Étape 2 : Créer deux nouvelles branches et faire des modifications**
 
@@ -127,7 +121,7 @@ Nous allons créer deux nouvelles branches (`feature-A` et `feature-B`) pour ill
      git commit -m "Ajout d'un echo dans index.php sur feature-B"
      ```
 
----
+
 
 ### **Étape 3 : Utiliser `git merge` pour combiner les branches**
 
@@ -169,7 +163,7 @@ Nous allons maintenant fusionner les deux branches (`feature-A` et `feature-B`) 
 
    Vous verrez un graphique montrant que les branches `feature-A` et `feature-B` ont été fusionnées dans `main`.
 
----
+
 
 ### **Étape 4 : Utiliser `git rebase` pour une approche différente**
 
@@ -210,7 +204,7 @@ Nous allons maintenant voir comment utiliser `git rebase` pour une approche plus
 
    Vous verrez un historique linéaire sans commit de fusion, contrairement à l'approche avec `merge`.
 
----
+
 
 ### **Étape 5 : Pousser les modifications vers GitHub**
 
@@ -230,7 +224,7 @@ Nous allons maintenant voir comment utiliser `git rebase` pour une approche plus
    git push --force origin feature-B
    ```
 
----
+
 
 ### **Étape 6 : Résumé des commandes `git merge` et `git rebase`**
 
@@ -271,9 +265,9 @@ Nous allons maintenant voir comment utiliser `git rebase` pour une approche plus
 
 
 
---------------------
+--
 ### **Étape 6 : Résumé des commandes `git merge` et `git rebase`** (suite)
---------------------
+--
 
 5. **Vérifier l'historique des commits** :
 
@@ -298,7 +292,7 @@ Nous allons maintenant voir comment utiliser `git rebase` pour une approche plus
      git push origin --delete feature-A
      ```
 
----
+
 
 ### **Étape 7 : Cas des conflits avec `git merge` et `git rebase`**
 
@@ -374,7 +368,7 @@ Lors de l'utilisation de `git merge` ou `git rebase`, vous pouvez parfois rencon
    git rebase --abort
    ```
 
----
+
 
 ### **Conclusion**
 

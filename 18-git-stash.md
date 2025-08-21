@@ -1,19 +1,13 @@
----
-title: "Chapitre 18 - Commande Git Stash"
-description: "Découvrez comment utiliser la commande **`git stash`**, qui vous permet de sauvegarder temporairement des modifications non committées dans Git sans les perdre, puis de les récupérer plus tard. Vous apprendrez comment utiliser `git stash` pour suspendre votre travail en cours sans le committer et comment récupérer ces modifications lorsque vous êtes prêt à les réappliquer."
 
----
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser la commande **`git stash`**, qui vous permet de sauvegarder temporairement des modifications non committées dans Git sans les perdre, puis de les récupérer plus tard. Vous apprendrez comment utiliser `git stash` pour suspendre votre travail en cours sans le committer et comment récupérer ces modifications lorsque vous êtes prêt à les réappliquer.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -32,7 +26,7 @@ Ce guide vous apprendra à utiliser la commande **`git stash`**, qui vous permet
 - **Sauvegarde temporaire** : Git met de côté les modifications de votre répertoire de travail et de la zone de staging.
 - **Stockage dans un stack (pile)** : Les stashes sont stockés dans une pile, et vous pouvez appliquer ou supprimer les stashes dans l'ordre de votre choix.
   
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -54,7 +48,7 @@ Si vous n'avez pas encore de dépôt local, commencez par cloner le projet **sit
    cd site-php-1
    ```
 
----
+
 
 ### **Étape 2 : Faire des modifications dans plusieurs fichiers sans committer**
 
@@ -100,7 +94,7 @@ Nous allons faire des modifications dans des fichiers, mais nous ne les committe
 
    Vous verrez que `frontend.js` et `backend.py` ont été modifiés mais ne sont pas encore ajoutés à la zone de staging.
 
----
+
 
 ### **Étape 3 : Utiliser `git stash` pour sauvegarder les modifications**
 
@@ -120,7 +114,7 @@ Nous allons maintenant sauvegarder ces modifications avec `git stash` pour pouvo
 
    Tapez à nouveau `git status` pour vérifier que les modifications ont bien été mises de côté. Vous verrez que le répertoire est maintenant **propre** et que toutes les modifications non committées ont été retirées.
 
----
+
 
 ### **Étape 4 : Récupérer les modifications stasheées avec `git stash pop`**
 
@@ -145,7 +139,7 @@ Lorsque vous êtes prêt à récupérer les modifications que vous avez mises de
 
    Tapez `git status` pour vérifier que les modifications dans `frontend.js` et `backend.py` ont bien été restaurées. Vous devriez voir que les fichiers sont à nouveau modifiés mais non ajoutés à la zone de staging.
 
----
+
 
 ### **Étape 5 : Sauvegarder plusieurs stashes et les gérer**
 
@@ -204,7 +198,7 @@ Git vous permet de stasher plusieurs ensembles de modifications. Vous pouvez ens
 
    Cela supprime le stash numéro 1 de la pile.
 
----
+
 
 ### **Étape 6 : Nettoyer tous les stashes avec `git stash clear`**
 
@@ -218,7 +212,7 @@ Si vous avez terminé avec tous vos stashes et que vous voulez nettoyer la pile,
    git stash clear
    ```
 
----
+
 
 ### **Étape 7 : Résumé des commandes `git stash`**
 
@@ -253,7 +247,7 @@ Si vous avez terminé avec tous vos stashes et que vous voulez nettoyer la pile,
    git stash clear
    ```
 
----
+
 
 ### **Conclusion**
 

@@ -1,18 +1,13 @@
----
-title: "Chapitre 15 - Branches Git"
-description: "Découvrez comment utiliser les branches dans Git pour travailler sur différentes fonctionnalités en parallèle"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser les branches dans Git. Les branches sont un élément essentiel de Git qui vous permettent de travailler sur des fonctionnalités distinctes sans affecter la branche principale de votre projet. Vous apprendrez à créer, changer, fusionner, et supprimer des branches, ainsi qu'à gérer plusieurs branches dans un projet Git.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -25,7 +20,7 @@ Ce guide vous apprendra à utiliser les branches dans Git. Les branches sont un 
 - **Collaboration** : Chaque développeur peut travailler sur sa propre branche, puis fusionner son travail dans `main` ou une autre branche lorsque tout est prêt.
 - **Expérimentations** : Les branches permettent d'essayer des idées sans toucher au projet principal.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -137,7 +132,7 @@ git add .
 git commit -m "Structure initiale de l'application avec modules de base"
 ```
 
----
+
 
 ### **Étape 2 : Créer une nouvelle branche**
 
@@ -174,7 +169,7 @@ main
       * (prêt pour développement)
 ```
 
----
+
 
 ### **Étape 3 : Faire des modifications dans la nouvelle branche**
 
@@ -278,7 +273,7 @@ git add tests/test_auth_complete.py
 git commit -m "Ajout tests unitaires complets pour authentification"
 ```
 
----
+
 
 ### **Étape 4 : Créer plusieurs branches en parallèle**
 
@@ -378,7 +373,7 @@ main
     └── database.py (amélioré)
 ```
 
----
+
 
 ### **Étape 5 : Fusionner les branches dans main**
 
@@ -425,7 +420,7 @@ projet-branches-demo/
     └── test_auth_complete.py (nouveaux tests)
 ```
 
----
+
 
 ### **Étape 6 : Nettoyer les branches**
 
@@ -441,7 +436,7 @@ git branch -d feature/database-avancee
 git branch
 ```
 
----
+
 
 ## **Résumé des commandes**
 
@@ -496,7 +491,7 @@ git push origin main            # Pousser main
 8. git push origin main                # Push résultat
 ```
 
----
+
 
 ## **Conclusion**
 
@@ -559,4 +554,4 @@ git log --oneline --graph      # Visualiser
 
 Vous pouvez désormais organiser vos projets avec des branches et collaborer efficacement en équipe !
 
----
+

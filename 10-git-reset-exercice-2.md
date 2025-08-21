@@ -1,18 +1,13 @@
----
-title: "Chapitre 10 - Application de la commande Git Reset"
-description: "Découvrez comment utiliser Git Reset pour réinitialiser l'état de votre dépôt à une version antérieure"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser les trois modes principaux de la commande `git reset` : **--soft**, **--mixed**, et **--hard**. Chaque mode a un effet différent sur les commits, la zone de staging, et votre répertoire de travail. Vous apprendrez à réinitialiser l'état de votre dépôt Git et à comprendre les impacts de chaque mode sur vos fichiers.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -30,7 +25,7 @@ Ce guide vous apprendra à utiliser les trois modes principaux de la commande `g
    - **Effet** : Réinitialise **HEAD**, la zone de staging, et le répertoire de travail. Cela supprime toutes les modifications non committées.
    - **Quand l’utiliser ?** : Utilisez ce mode avec prudence, car il supprime toutes les modifications locales non enregistrées. C'est utile si vous voulez annuler complètement des modifications et revenir à un état antérieur.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -67,7 +62,7 @@ git add .
 git commit -m "Initialisation du projet exercice"
 ```
 
----
+
 
 ### **Étape 2 : Créer une nouvelle branche pour tester `git reset`**
 
@@ -79,7 +74,7 @@ Nous allons créer une nouvelle branche pour faire des modifications et tester l
    git checkout -b reset-test-branch
    ```
 
----
+
 
 ### **Étape 3 : Faire plusieurs modifications et commits**
 
@@ -175,7 +170,7 @@ reset-test-branch
     * 1x2y3z4 (main) Initialisation du projet exercice
 ```
 
----
+
 
 ### **Étape 4 : Utiliser `git reset --soft`**
 
@@ -201,7 +196,7 @@ reset-test-branch
    git commit -m "Regroupement des modifications pour app.js, index.php, et connection.php"
    ```
 
----
+
 
 ### **Étape 5 : Utiliser `git reset --mixed`**
 
@@ -225,7 +220,7 @@ reset-test-branch
 
    Tapez `git status`. Vous verrez que `main.py` est retiré de la zone de staging, mais les modifications sont toujours présentes dans le répertoire de travail. Si vous regardez dans l'éditeur, vous verrez toujours la fonction ajoutée dans `main.py`.
 
----
+
 
 ### **Étape 6 : Utiliser `git reset --hard`**
 
@@ -255,7 +250,7 @@ reset-test-branch
 
    Ouvrez à nouveau `style.css` dans votre éditeur. Vous verrez que les lignes ajoutées ont été supprimées et que toutes les modifications locales ont été annulées.
 
----
+
 
 ### **Étape 7 : Finaliser l'exercice**
 
@@ -281,7 +276,7 @@ Après avoir expérimenté avec tous les modes de `git reset`, finalisez votre t
 git push origin main
 ```
 
----
+
 
 ## **Résumé des commandes**
 
@@ -342,7 +337,7 @@ git merge reset-test-branch   # Fusionner si désiré
 git branch -d reset-test-branch  # Supprimer branche test
 ```
 
----
+
 
 ## **Conclusion**
 
@@ -367,5 +362,5 @@ git branch -d reset-test-branch  # Supprimer branche test
 
 Vous êtes maintenant capable d'utiliser Git Reset efficacement dans vos projets !
 
----
+
 

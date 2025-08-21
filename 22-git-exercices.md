@@ -1,19 +1,13 @@
----
-title: "Chapitre 22 - Exercices Git"
-description: "L’objectif de cet assignement est de tester votre compréhension et vos compétences dans l’utilisation des différentes commandes Git. Vous allez simuler un projet en plusieurs étapes qui nécessite l’utilisation des branches, des commits, des fusions, des tags, et des outils comme `stash`, `cherry-pick`, `reset`, et `rebase`. Vous devrez également synchroniser votre travail avec un dépôt distant (GitHub)."
 
----
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 L’objectif de cet assignement est de tester votre compréhension et vos compétences dans l’utilisation des différentes commandes Git. Vous allez simuler un projet en plusieurs étapes qui nécessite l’utilisation des branches, des commits, des fusions, des tags, et des outils comme `stash`, `cherry-pick`, `reset`, et `rebase`. Vous devrez également synchroniser votre travail avec un dépôt distant (GitHub).
 
----
+
 
 ### **Étape 1 : Cloner le projet et préparer l’environnement**
 
@@ -33,7 +27,7 @@ L’objectif de cet assignement est de tester votre compréhension et vos compé
    cd site-php-1
    ```
 
----
+
 
 ### **Étape 2 : Configurer les branches de base**
 
@@ -65,7 +59,7 @@ L’objectif de cet assignement est de tester votre compréhension et vos compé
      git commit -m "Ajout du tableau de bord"
      ```
 
----
+
 
 ### **Étape 3 : Fusionner et gérer les branches**
 
@@ -98,7 +92,7 @@ L’objectif de cet assignement est de tester votre compréhension et vos compé
    git merge feature-dashboard
    ```
 
----
+
 
 ### **Étape 4 : Utiliser `git stash` pour sauvegarder les modifications en cours**
 
@@ -128,7 +122,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
    git stash pop
    ```
 
----
+
 
 ### **Étape 5 : Utiliser `git cherry-pick` pour appliquer des commits spécifiques**
 
@@ -157,7 +151,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
    git cherry-pick <commit_id>
    ```
 
----
+
 
 ### **Étape 6 : Taguer des versions de release**
 
@@ -177,7 +171,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
    git push origin v1.0
    ```
 
----
+
 
 ### **Étape 7 : Utiliser `git worktree` pour travailler sur plusieurs branches**
 
@@ -197,7 +191,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
    cd ../feature-testing
    ```
 
----
+
 
 ### **Étape 8 : Réinitialiser des modifications avec `git reset` et `git revert`**
 
@@ -217,7 +211,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
    git revert <commit_id>
    ```
 
----
+
 
 ### **Étape 9 : Pousser et synchroniser avec GitHub**
 
@@ -239,7 +233,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
    git pull origin main
    ```
 
----
+
 
 ### **Étape 10 : Résumé des commandes dans cet assignment**
 
@@ -251,7 +245,7 @@ Supposons que vous travaillez sur une nouvelle fonctionnalité mais que vous dev
 - **Réinitialiser et annuler des commits** : `git reset`, `git revert`
 - **Synchroniser avec GitHub** : `git push`, `git pull`
 
----
+
 
 ### **Conclusion**
 

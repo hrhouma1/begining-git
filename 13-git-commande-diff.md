@@ -1,18 +1,13 @@
----
-title: "Chapitre 13 - Commande Git Diff"
-description: "Découvrez comment utiliser la commande Git Diff pour visualiser les différences entre deux états d'un fichier dans un projet Git"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser la commande `git diff`, qui permet de visualiser les différences entre deux états d'un fichier dans un projet Git. Vous verrez comment cette commande est utile pour comparer les modifications que vous avez apportées avant de les committer.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -31,7 +26,7 @@ Ce guide vous apprendra à utiliser la commande `git diff`, qui permet de visual
 2. **Différences entre la zone de staging et le répertoire de travail** : Comparez les fichiers dans la zone de staging avec ceux du répertoire de travail.
 3. **Différences entre commits** : Comparez des versions différentes de fichiers à travers les commits.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -85,7 +80,7 @@ git add .
 git commit -m "Version initiale du projet"
 ```
 
----
+
 
 ### **Étape 2 : Créer une nouvelle branche pour tester `git diff`**
 
@@ -97,7 +92,7 @@ Nous allons créer une nouvelle branche pour faire des modifications et tester l
    git checkout -b diff-test-branch
    ```
 
----
+
 
 ### **Étape 3 : Faire des modifications dans plusieurs fichiers**
 
@@ -144,7 +139,7 @@ def divide(a, b):
 
 2. **Ne commitez pas encore !** Nous utiliserons `git diff` pour analyser les modifications.
 
----
+
 
 ### **Étape 4 : Utiliser `git diff` pour comparer les modifications non ajoutées à la zone de staging**
 
@@ -162,7 +157,7 @@ Nous allons maintenant utiliser `git diff` pour voir les différences dans les f
 ```diff
 diff --git a/calculator.py b/calculator.py
 index 1a2b3c4..5d6e7f8 100644
---- a/calculator.py
+ a/calculator.py
 +++ b/calculator.py
 @@ -4,0 +5,9 @@ def subtract(a, b):
 +
@@ -177,7 +172,7 @@ index 1a2b3c4..5d6e7f8 100644
 +    return 'Erreur: division par zéro'
 ```
 
----
+
 
 ### **Étape 5 : Ajouter les modifications à la zone de staging**
 
@@ -189,7 +184,7 @@ Maintenant, nous allons ajouter les fichiers à la zone de staging pour voir com
    git add calculator.py
    ```
 
----
+
 
 ### **Étape 6 : Utiliser `git diff` pour comparer la zone de staging et le répertoire de travail**
 
@@ -214,14 +209,14 @@ Après avoir ajouté `app.js` à la zone de staging, nous allons comparer la dif
 **Visualisation des zones :**
 ```
 Working Directory    Staging Area       Repository
------------------   --------------     ------------
+--   --     
 calculator.py  ←→   calculator.py  →   (dernier commit)
 styles.css [M]      (vide)             (dernier commit)
 
 [M] = Modified (modifié mais pas en staging)
 ```
 
----
+
 
 ### **Étape 7 : Utiliser `git diff` entre deux commits**
 
@@ -286,7 +281,7 @@ diff-test-branch
    git diff 3b1d9a7 f8a2e5c calculator.py
    ```
 
----
+
 
 ### **Étape 8 : Finaliser l'exercice (Optionnel)**
 
@@ -317,7 +312,7 @@ main (après fusion)
 git push origin main
 ```
 
----
+
 
 ## **Résumé des commandes**
 
@@ -382,7 +377,7 @@ git diff --name-only        # Seulement les noms des fichiers modifiés
 git diff --cached           # Alias pour --staged
 ```
 
----
+
 
 ## **Conclusion**
 
@@ -409,7 +404,7 @@ git diff --cached           # Alias pour --staged
 
 **Lecture de la sortie git diff :**
 ```diff
---- a/fichier.py    (version ancienne)
+ a/fichier.py    (version ancienne)
 +++ b/fichier.py    (version nouvelle)
 @@ -4,6 +4,8 @@    (ligne 4, 6 lignes → ligne 4, 8 lignes)
  def fonction():
@@ -427,4 +422,4 @@ git diff --cached           # Alias pour --staged
 
 Vous pouvez désormais utiliser Git Diff pour analyser précisément l'évolution de votre code !
 
----
+

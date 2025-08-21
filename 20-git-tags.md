@@ -1,19 +1,13 @@
----
-title: "Chapitre 20 - Commande Git Tags"
-description: "Découvrez comment utiliser les **tags Git** pour marquer des points spécifiques dans l'historique de votre projet, comme des versions, des releases, ou des milestones importantes. Vous apprendrez à créer, lister, et supprimer des tags, ainsi qu’à les pousser vers un dépôt distant comme GitHub."
 
----
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser les **tags Git** pour marquer des points spécifiques dans l'historique de votre projet, comme des versions, des releases, ou des milestones importantes. Vous apprendrez à créer, lister, et supprimer des tags, ainsi qu’à les pousser vers un dépôt distant comme GitHub.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -32,7 +26,7 @@ Ce guide vous apprendra à utiliser les **tags Git** pour marquer des points sp�
 1. **Les tags légers (lightweight tags)** : Un simple pointeur vers un commit particulier sans informations supplémentaires. Ils sont utilisés pour un marquage rapide.
 2. **Les tags annotés (annotated tags)** : Contiennent des informations supplémentaires comme un message, un nom, une date, et sont signés. Ils sont généralement utilisés pour les releases officielles.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -54,7 +48,7 @@ Si vous n'avez pas encore de dépôt local, commencez par cloner le projet **sit
    cd site-php-1
    ```
 
----
+
 
 ### **Étape 2 : Créer un tag léger (lightweight tag)**
 
@@ -80,7 +74,7 @@ Un tag léger est simplement un pointeur vers un commit particulier. C'est la fa
 
    Cela crée un tag sur le dernier commit de la branche actuelle.
 
----
+
 
 ### **Étape 3 : Créer un tag annoté (annotated tag)**
 
@@ -107,7 +101,7 @@ Les tags annotés contiennent des informations supplémentaires, comme un messag
 
    Cela affichera des informations supplémentaires sur le commit tagué, ainsi que le message de tag que vous avez ajouté.
 
----
+
 
 ### **Étape 4 : Lister tous les tags**
 
@@ -119,7 +113,7 @@ git tag
 
 Cela affichera tous les tags créés jusqu'à présent dans votre projet.
 
----
+
 
 ### **Étape 5 : Pousser les tags vers GitHub**
 
@@ -141,7 +135,7 @@ Par défaut, les tags ne sont pas automatiquement poussés vers GitHub. Vous dev
    git push origin --tags
    ```
 
----
+
 
 ### **Étape 6 : Supprimer un tag**
 
@@ -165,7 +159,7 @@ Si vous avez créé un tag par erreur ou si vous voulez supprimer un tag spécif
    git push origin --delete v1.0
    ```
 
----
+
 
 ### **Étape 7 : Taguer un commit spécifique**
 
@@ -195,7 +189,7 @@ Si vous voulez taguer un commit particulier (pas le dernier), vous pouvez spéci
    git push origin v2.0
    ```
 
----
+
 
 ### **Étape 8 : Résumé des commandes `git tag`**
 
@@ -239,7 +233,7 @@ Si vous voulez taguer un commit particulier (pas le dernier), vous pouvez spéci
    git push origin --delete v1.0
    ```
 
----
+
 
 ### **Conclusion**
 
@@ -247,9 +241,9 @@ Ce guide vous a montré comment utiliser **`git tag`** pour marquer des points s
 
 En utilisant les tags, vous pouvez facilement naviguer dans l'historique de votre projet et revenir à des versions spécifiques pour des déploiements ou des corrections de bugs.
 
------------
+--
 # Annexe 1 :  Gérer les tags à distance (remote) :
------------
+--
 
 ### **Lister les tags à distance :**
 ```bash
@@ -277,9 +271,9 @@ git fetch --tags
 ```
 
 
------------
+--
 # Annexe 2 :  Gérer les tags à distance (remote) dans une branche spécifique :
------------
+--
 
 
 *Git ne permet pas directement de lister les **tags** par branche, car les **tags** sont globaux et non spécifiques à une branche. Cependant, voici une méthode pour lister les tags associés à une branche spécifique ainsi que pour récupérer les branches avec `git fetch`.*

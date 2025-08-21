@@ -1,16 +1,8 @@
----
-title: "Chapitre 2 - Installation de Git"
-description: "Guide complet pour installer Git sur différents systèmes d'exploitation"
----
-
 # Installation de Git
-
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 
 1. [Introduction](#introduction)
@@ -22,10 +14,10 @@ description: "Guide complet pour installer Git sur différents systèmes d'explo
 7. [Référence](#reference)
 
 <br/>
----
+
 <a name="introduction"></a>
 # Introduction
----
+
 <br/>
 
 Git est un **système de contrôle de version** distribué qui permet de suivre les modifications dans le code source sur votre machine locale.
@@ -34,12 +26,12 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
 <br/>
 
 
----
+
 <a name="installation-windows"></a>
 
 
 # 1-**Étapes d'installation de Git sur Windows**
----
+
 <br/>
 
 
@@ -76,12 +68,12 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
----
+
 <a name="installation-ubuntu"></a>
 
 
 # 2-**Installation sur Ubuntu**
----
+
 <br/>
 
 <a name="installation-git-ubuntu-etape-1"></a>
@@ -124,11 +116,11 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 <a name="installation-macos"></a>
 
 # 3-**Installation sur macOS**
----
+
 <br/>
 
 <a name="installation-homebrew"></a>
@@ -155,13 +147,13 @@ Git est un **système de contrôle de version** distribué qui permet de suivre 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 <a name="configuration-git"></a>
 
 
 # 4-**Configuration de Git après l'installation**
 
----
+
 <br/>
 
 Après avoir installé Git sur n'importe quel système d'exploitation, il est nécessaire de le configurer pour la première fois.
@@ -186,11 +178,11 @@ Après avoir installé Git sur n'importe quel système d'exploitation, il est n�
 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
----
+
 <a name="conclusion"></a>
 
 # Conclusion
----
+
 <br/>
 
 - Git est un outil essentiel pour le suivi des modifications dans le code source et facilite la collaboration entre développeurs. Après avoir suivi les étapes ci-dessus pour l'installation sur Windows, Ubuntu ou macOS, vous pouvez maintenant commencer à utiliser Git pour gérer vos projets de manière efficace. Il est également important de configurer correctement Git après l’installation pour assurer un bon suivi des contributions.
@@ -199,12 +191,12 @@ Après avoir installé Git sur n'importe quel système d'exploitation, il est n�
 
 <br/>
 #### [⬆️ retour à la table des matières](#table-des-matieres)
----
+
 <a name="reference"></a>
 
----
+
 # Référence :
----
+
 - https://phoenixnap.com/kb/how-to-install-git-windows
 
 

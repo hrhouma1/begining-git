@@ -1,18 +1,13 @@
----
-title: "Chapitre 16 - Branches Distantes Git"
-description: "Découvrez comment gérer les branches distantes dans Git. Vous apprendrez à créer, pousser, récupérer et gérer des branches distantes dans GitHub et synchroniser votre travail avec vos collaborateurs."
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à gérer les **branches distantes** dans Git. Vous apprendrez comment créer, pousser, récupérer et gérer des branches distantes dans GitHub et synchroniser votre travail avec vos collaborateurs.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -33,7 +28,7 @@ Ce guide vous apprendra à gérer les **branches distantes** dans Git. Vous appr
 4. **`git branch -r`** : Voir toutes les branches distantes.
 5. **`git checkout -b`** : Créer une branche locale à partir d'une branche distante.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -161,7 +156,7 @@ git remote add origin https://github.com/VOTRE_USERNAME/projet-branches-distante
 git push -u origin main
 ```
 
----
+
 
 ### **Étape 2 : Créer une nouvelle branche locale et la pousser vers GitHub**
 
@@ -296,7 +291,7 @@ git push -u origin main
    - **`origin`** : Il s'agit du dépôt distant (par défaut, le nom est `origin`).
    - **`feature/interface-amelioree`** : Il s'agit du nom de la branche locale que nous poussons vers GitHub.
 
----
+
 
 ### **Étape 3 : Voir toutes les branches distantes**
 
@@ -330,7 +325,7 @@ Branches locales et distantes :
   * Version initiale du projet branches distantes
 ```
 
----
+
 
 ### **Étape 4 : Récupérer une branche distante avec `git fetch`**
 
@@ -368,7 +363,7 @@ Supposons qu'un collaborateur a créé une nouvelle branche sur GitHub et que vo
    - Les branches **`remotes/origin/`** sont les branches distantes sur GitHub
    - L'**astérisque (*)** indique la branche courante
 
----
+
 
 ### **Étape 5 : Travailler avec une branche distante**
 
@@ -446,7 +441,7 @@ Si vous souhaitez travailler sur une branche distante (par exemple `feature/inte
      git push origin feature/documentation
      ```
 
----
+
 
 ### **Étape 6 : Fusionner une branche distante dans `main`**
 
@@ -494,7 +489,7 @@ main (HEAD, local + remote)
   * Version initiale du projet branches distantes
 ```
 
----
+
 
 ### **Étape 7 : Supprimer une branche distante**
 
@@ -516,7 +511,7 @@ git fetch --prune                       # Nettoyer les références
 
 Cela supprimera la branche `feature/documentation` du dépôt GitHub et nettoiera votre environnement local.
 
----
+
 
 ### **Étape 8 : Résumé des commandes pour gérer les branches distantes**
 
@@ -547,9 +542,9 @@ Cela supprimera la branche `feature/documentation` du dépôt GitHub et nettoier
 
 
 
--------------
+-
 ### **Étape 8 : Résumé des commandes pour gérer les branches distantes** (suite)
--------------
+-
 
 5. **Fusionner une branche distante dans `main`** :
    ```bash
@@ -566,7 +561,7 @@ Cela supprimera la branche `feature/documentation` du dépôt GitHub et nettoier
    git fetch --prune                       # Nettoyer les références
    ```
 
----
+
 
 ### **Conclusion**
 

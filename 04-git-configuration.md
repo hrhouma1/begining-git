@@ -1,13 +1,8 @@
----
-title: "Chapitre 4 - Configuration de Git"
-description: "Découvrez comment configurer Git pour optimiser votre workflow de développement"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 1. [Introduction](#introduction)
 2. [Configuration globale](#configuration-globale)
@@ -15,22 +10,22 @@ description: "Découvrez comment configurer Git pour optimiser votre workflow de
 4. [Conclusion](#conclusion)
 
 <br/>
----
+
 
 <a name="introduction"></a>
 # Introduction
----
+
 
 La **configuration de Git** permet de définir les paramètres globaux ou locaux pour un projet Git. Lorsque vous créez un projet et que vous l'enregistrez dans un dépôt local, il est essentiel de spécifier le nom de l'auteur et son adresse email. Ces informations peuvent être stockées dans un fichier de configuration qui peut être global ou local.
 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="configuration-globale"></a>
 ## 1 - Configuration globale
----
+
 
 Le fichier de configuration globale est commun à tous les projets Git sur un même système local. Si aucune configuration locale n'est définie, Git utilise la configuration globale. Un fichier `.gitconfig` est créé dans le dossier de l'utilisateur.
 
@@ -65,11 +60,11 @@ Le contenu du fichier `.gitconfig` ressemblera à ceci :
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="etude-de-cas-1-configuration-globale"></a>
 ## 2 - Étude de cas 1 : Configuration globale
----
+
 
 ### Contexte :
 Haythem est développeur de logiciels et travaille sur un projet appelé **MyProj** sur son ordinateur portable. Il utilise Git pour gérer le dépôt de son projet. Haythem souhaite définir son nom et son adresse email dans la configuration globale pour que ses contributions soient correctement enregistrées.
@@ -112,11 +107,11 @@ Haythem est développeur de logiciels et travaille sur un projet appelé **MyPro
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="configuration-locale"></a>
 ## 3 - Configuration locale
----
+
 
 La configuration locale est spécifique à un projet Git particulier. Si plusieurs développeurs travaillent sur une même machine, chaque projet peut avoir ses propres paramètres de nom et d'email. La configuration locale est stockée dans le fichier `.git/config` du projet.
 
@@ -146,11 +141,11 @@ Le fichier `.git/config` du projet contiendra :
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="etude-de-cas-2-configuration-locale"></a>
 ## 4 - Étude de cas 2 : Configuration locale
----
+
 
 ### Contexte :
 Haythem doit désormais travailler sur un serveur de développement où plusieurs développeurs collaborent. Il ne souhaite pas utiliser la configuration globale, mais préfère définir un nom et une adresse email spécifiques au projet pour que ses contributions soient correctement enregistrées.
@@ -195,15 +190,15 @@ Haythem doit désormais travailler sur un serveur de développement où plusieur
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="conclusion"></a>
 ## 5 - Conclusion
----
+
 
 La configuration Git est une étape essentielle pour assurer que chaque commit est correctement attribué à l'auteur avec les informations appropriées. Il est possible de configurer Git au niveau global ou local, en fonction du contexte de développement. La configuration globale est utile pour les projets personnels ou sur une machine dédiée, tandis que la configuration locale est pratique lorsque plusieurs développeurs partagent un même environnement. Ce cours vous a montré comment configurer Git aussi bien au niveau global que local, avec des études de cas pour illustrer les différents scénarios d'utilisation.
 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+

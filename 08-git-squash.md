@@ -1,14 +1,8 @@
----
-title: "Chapitre 8 - Git Squash"
-description: "Découvrez comment utiliser Git Squash pour combiner plusieurs commits en un seul"
----
 
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 1. [Introduction](#introduction)
 2. [Partie 1 : Théorie](#partie-1-theorie)
@@ -25,20 +19,20 @@ description: "Découvrez comment utiliser Git Squash pour combiner plusieurs com
 
 
 <br/>
----
+
 
 <a name="introduction"></a>
 # Introduction
----
+
       
 Dans cette section, nous allons apprendre ce qu'est **Git Squash**, à quoi cela sert, et comment l'utiliser dans un projet. Ensuite, nous mettrons cela en pratique avec un projet exemple que nous créerons ensemble.
 
 <br/>
 
----
+
 <a name="partie-1-theorie"></a>
 ## 1 - **Partie 1 : Théorie**
----
+
 
 <a name="qu-est-ce-que-git-squash"></a>
 ### 1. **Qu'est-ce que Git Squash ?**
@@ -59,10 +53,10 @@ Git Squash est une commande qui permet de combiner plusieurs commits en un seul.
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 <a name="partie-2-pratique"></a>
 ## 2 - **Partie 2 : Pratique**
----
+
 
 <a name="etape-1"></a>
 ### **Étape 1 : Créer un nouveau projet exemple**
@@ -292,7 +286,7 @@ feature/ameliorations
 **Comparaison AVANT/APRÈS :**
 ```
 AVANT squash:                    APRÈS squash:
----------------                  --------------
+                  --
 * Mise à jour config      ═══>   * Amélioration du projet 
 * Ajout fonction calcul   ═══>     avec nouvelles fonctionnalités
 * Ajout fonction saluer   ═══>   
@@ -351,7 +345,7 @@ git push origin main
 
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
----
+
 
 
 <a name="resume-commandes"></a>
@@ -413,7 +407,7 @@ git log --oneline --graph   # Visualiser l'historique
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 
 <a name="conclusion"></a>
@@ -444,5 +438,5 @@ Vous pouvez désormais utiliser cette technique pour maintenir un historique Git
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 

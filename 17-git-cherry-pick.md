@@ -1,19 +1,13 @@
----
-title: "Chapitre 17 - Commande Git Cherry Pick"
-description: "Découvrez comment utiliser la commande **`git cherry-pick`**, qui permet de sélectionner des commits spécifiques d'une branche pour les appliquer à une autre. Vous apprendrez quand et comment utiliser cette commande dans un projet Git."
 
----
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 ### **Objectif :**
 Ce guide vous apprendra à utiliser la commande **`git cherry-pick`**, qui permet de sélectionner des commits spécifiques d'une branche pour les appliquer à une autre. Vous apprendrez quand et comment utiliser cette commande dans un projet Git.
 
----
+
 
 ## **Partie 1 : Théorie**
 
@@ -30,7 +24,7 @@ Ce guide vous apprendra à utiliser la commande **`git cherry-pick`**, qui perme
 
 - `git cherry-pick` applique un ou plusieurs commits d'une branche source à une autre branche. Chaque commit spécifié par son **ID** sera appliqué à la branche actuelle sans toucher aux autres commits de la branche source.
 
----
+
 
 ## **Partie 2 : Pratique**
 
@@ -137,7 +131,7 @@ git add .
 git commit -m "Version initiale de l'application de tâches"
 ```
 
----
+
 
 ### **Étape 2 : Créer deux branches avec des fonctionnalités différentes**
 
@@ -233,7 +227,7 @@ function sortTasksByPriority(tasks) {
    git checkout -b feature/notifications
    ```
 
----
+
 
 ### **Étape 3 : Utiliser `git cherry-pick` pour appliquer des commits spécifiques**
 
@@ -323,7 +317,7 @@ feature/priorites                    feature/notifications (HEAD)
        * e1f6b8d (initial)                  
 ```
 
----
+
 
 ### **Étape 4 : Gérer les conflits lors du `cherry-pick`**
 
@@ -430,7 +424,7 @@ Parfois, des conflits peuvent survenir lors d'un cherry-pick. Simulons et résol
    git cherry-pick --abort  # Annule tout et revient à l'état précédent
    ```
 
----
+
 
 ### **Étape 5 : Intégrer et finaliser**
 
@@ -461,7 +455,7 @@ Après avoir appliqué les commits avec `git cherry-pick`, finalisez le workflow
    git branch -d feature/priorites
    ```
 
----
+
 
 ### **Étape 6 : Résumé des commandes `git cherry-pick`**
 
@@ -510,13 +504,13 @@ Après avoir appliqué les commits avec `git cherry-pick`, finalisez le workflow
 **Cas d'usage typiques :**
 
 | Situation | Commande | Description |
-|-----------|----------|-------------|
+|--|-|-|
 | Bug fix urgent | `git cherry-pick <fix_commit>` | Appliquer un correctif sur plusieurs branches |
 | Feature partielle | `git cherry-pick commit1 commit3` | Récupérer seulement certaines parties |
 | Backport | `git cherry-pick -x <commit>` | Porter une fonctionnalité vers une version antérieure |
 | Test avant merge | `git cherry-pick -n <commit>` | Tester un commit sans l'appliquer définitivement |
 
----
+
 
 ### **Conclusion**
 

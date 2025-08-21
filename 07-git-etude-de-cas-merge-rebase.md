@@ -1,13 +1,8 @@
----
-title: "Chapitre 7 - Etude de cas : Merge vs Rebase"
-description: "Comprendre les différences entre git merge et git rebase avec un projet exemple complet"
----
 
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 1. [Introduction](#introduction)
 2. [Partie 1 : Théorie](#partie-1-theorie)
@@ -25,22 +20,22 @@ description: "Comprendre les différences entre git merge et git rebase avec un 
 5. [Conclusion](#conclusion)
 
 <br/>
----
+
 
 <a name="introduction"></a>
 ## Introduction
----
+
 
 Cette étude de cas vous permettra de comprendre concrètement les différences entre **Git Merge** et **Git Rebase** à travers un projet exemple complet. Vous apprendrez quand utiliser chaque approche et comment gérer les conflits.
 
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="partie-1-theorie"></a>
 ## 1 - Partie 1 : Théorie
----
+
 
 <a name="git-merge"></a>
 ### **Git Merge : Qu'est-ce que c'est ?**
@@ -85,7 +80,7 @@ Cette étude de cas vous permettra de comprendre concrètement les différences 
 ### **Comparaison Merge vs Rebase**
 
 | Critère | Git Merge | Git Rebase |
-|---------|-----------|------------|
+||--||
 | **Historique** | Préserve l'historique réel | Réécrit l'historique |
 | **Lisibilité** | Montre les divergences | Historique linéaire |
 | **Sécurité** | Plus sûr | Risqué sur branches partagées |
@@ -99,11 +94,11 @@ Cette étude de cas vous permettra de comprendre concrètement les différences 
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="partie-2-pratique"></a>
 ## 2 - Partie 2 : Pratique
----
+
 
 <a name="etape-1"></a>
 ### **Étape 1 : Créer un projet exemple pour Merge vs Rebase**
@@ -617,11 +612,11 @@ main (HEAD)
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="resume-commandes"></a>
 ## **Résumé des commandes**
----
+
 
 ### **Commandes complètes du tutoriel**
 
@@ -681,11 +676,11 @@ git status                            # État du dépôt
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="conclusion"></a>
 ## **Conclusion**
----
+
 
 **Félicitations !** Vous avez maîtrisé les concepts fondamentaux de **Git Merge vs Rebase** avec un projet web complet.
 
@@ -727,4 +722,3 @@ Vous pouvez désormais choisir la stratégie appropriée selon le contexte et ma
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----

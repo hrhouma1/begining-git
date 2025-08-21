@@ -1,15 +1,8 @@
----
-title: "Chapitre 9 - Commande Git Reset"
-description: "Découvrez comment utiliser Git Reset pour réinitialiser l'état de votre dépôt à une version antérieure"
----
 
-
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 1. [Introduction](#introduction)
 2. [Partie 1 : Théorie](#partie-1-theorie)
@@ -27,11 +20,11 @@ description: "Découvrez comment utiliser Git Reset pour réinitialiser l'état 
 5. [Conclusion](#conclusion)
 
 <br/>
----
+
 
 <a name="introduction"></a>
 ## Introduction
----
+
 
 La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aussi être dangereuse si elle est mal utilisée. Ce guide va vous expliquer **qu'est-ce que git reset**, comment il fonctionne, et comment l'utiliser de manière sécurisée avec des exemples pratiques sur un projet que nous créerons ensemble.
 
@@ -39,11 +32,11 @@ La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aus
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="partie-1-theorie"></a>
 ## 1 - Partie 1 : Théorie
----
+
 
 <a name="qu-est-ce-que-git-reset"></a>
 ### **Qu'est-ce que `git reset` ?**
@@ -74,11 +67,11 @@ La commande `git reset` est l'une des plus puissantes de Git, mais elle peut aus
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="partie-2-pratique"></a>
 ## 2 - Partie 2 : Pratique
----
+
 
 Nous allons maintenant voir comment utiliser `git reset` dans un cas concret en créant un projet exemple simple.
 
@@ -116,7 +109,7 @@ git add .
 git commit -m "Structure initiale du projet"
 ```
 
----   
+   
 
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
@@ -208,7 +201,7 @@ experiment-reset
     * 2x4y8z3 (main) Structure initiale du projet
 ```
 
----
+
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
@@ -240,7 +233,7 @@ Supposons que vous réalisiez que vous ne voulez pas avoir trois commits sépar�
    git commit -m "Regroupement des changements pour app.js, index.php, et connection.php"
    ```
 
----
+
 
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
@@ -266,7 +259,7 @@ Supposons que vous avez ajouté des fichiers à la zone de staging par erreur et
 
    Tapez `git status` pour voir que `script.py` n'est plus dans la zone de staging, mais les modifications locales sont toujours présentes dans le répertoire de travail.
 
----
+
 
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
@@ -310,7 +303,7 @@ Supposons que vous ayez modifié plusieurs fichiers et que vous réalisez que vo
 
    Ouvrez `config.json` et constatez que la propriété "test" ajoutée a été supprimée. Vous pouvez également exécuter `git status` pour vérifier que tout est revenu à l'état initial.
 
----
+
 
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
@@ -357,12 +350,12 @@ git push origin main
 [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 
 <a name="resume-commandes"></a>
 ## 3 - Résumé des commandes
----
+
 
 ### **Commandes complètes du tutoriel**
 
@@ -424,7 +417,7 @@ git log --oneline --graph  # Historique graphique
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 
 <a name="conclusion"></a>
 ### 4 - **Conclusion**
@@ -453,5 +446,5 @@ Vous pouvez désormais utiliser Git Reset efficacement tout en évitant les piè
 #### [⬆️ retour à la table des matières](#table-des-matieres)
 <br/>
 
----
+
 

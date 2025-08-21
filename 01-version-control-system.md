@@ -1,15 +1,8 @@
----
-title: "Chapitre 1 - Introduction Théorique à la gestion de version"
-description: "Découvrez les concepts fondamentaux des systèmes de contrôle de version et leur importance dans le développement logiciel moderne."
----
-
 # Système de Contrôle de Version
-
----
 <a name="table-des-matieres"></a>
 
 ## Table des matières
----
+
 
 1. [La Vie Sans Contrôle de Version](#la-vie-sans-contrôle-de-version)
    - [1.1 Le Scénario Catastrophe Quotidien](#le-scenario-catastrophe-quotidien)
@@ -31,9 +24,9 @@ description: "Découvrez les concepts fondamentaux des systèmes de contrôle de
 
 <br/>
 
----
+
 # 1 - La Vie Sans Contrôle de Version
----
+
 
 
 <a name="le-scenario-catastrophe-quotidien"></a>
@@ -93,10 +86,10 @@ Le scénario catastrophe décrit ci-dessus illustre parfaitement pourquoi nous a
   
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 <br/>
----
+
 <a name="les-types-de-systèmes"></a>
 ## 2 - Les Types de Systèmes
----
+
 
 <br/>
 
@@ -132,7 +125,7 @@ Il existe trois principaux types de systèmes de contrôle de version, chacun av
 Voici un tableau comparatif des différents systèmes :
 
 | Caractéristique | LVCS | CVCS | DVCS |
-|----------------|------|------|------|
+|-||||
 | Collaboration | Non | Oui | Excellent |
 | Travail Hors-ligne | Oui | Non | Oui |
 | Sécurité | Faible | Moyenne | Élevée |
@@ -142,7 +135,7 @@ Voici un tableau comparatif des différents systèmes :
 #### 2.5 Outils et Exemples par Type de Système
 
 | Type | Outils | Caractéristiques | Utilisé par |
-|------|--------|------------------|-------------|
+||--||-|
 | **LVCS** | • RCS<br/>• SCCS<br/>• Source Integrity | • Stockage local uniquement<br/>• Base de données simple<br/>• Pas de réseau requis | • Développeurs solo<br/>• Petits projets<br/>• Systèmes embarqués |
 | **CVCS** | • SVN (Subversion)<br/>• CVS<br/>• Perforce<br/>• ClearCase | • Serveur central<br/>• Numéros de versions séquentiels<br/>• Nécessite une connexion | • Entreprises traditionnelles<br/>• Projets legacy<br/>• Équipes localisées |
 | **DVCS** | • Git<br/>• Mercurial<br/>• Bazaar<br/>• Fossil | • Copies complètes<br/>• Branches légères<br/>• Fusion avancée | • Startups<br/>• Open Source<br/>• Équipes distribuées |
@@ -157,9 +150,9 @@ Voici un tableau comparatif des différents systèmes :
 <a name="git"></a>
 
 <br/>
----
+
 # 3 - git 
----
+
 
 <br/>
 
@@ -176,7 +169,7 @@ Git s'est imposé comme le système de contrôle de version dominant, supplantan
 ### Pourquoi Git Remplace SVN ?
 
 | Aspect | Git | SVN |
-|--------|-----|-----|
+|--|--|--|
 | Performance | Ultra rapide (opérations locales) | Plus lent (dépend du serveur) |
 | Collaboration | Branches légères et merge intelligent | Branches complexes et conflits fréquents |
 | Disponibilité | Travail hors-ligne possible | Nécessite connexion serveur |
@@ -191,10 +184,10 @@ Git s'est imposé comme le système de contrôle de version dominant, supplantan
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 
 <br/>
----
+
 <a name="Github"></a>
 # 4 - Github
----
+
 
 <br/>
 
@@ -230,10 +223,10 @@ GitHub offre aussi :
 #### [⬆️ Retour à la table des matières](#table-des-matieres)
 
 <br/>
----
+
 <a name="conclusion"></a>
 # 5 - Conclusion
----
+
 
 <br/>
 
